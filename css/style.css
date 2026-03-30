@@ -147,6 +147,7 @@ ol {
   background-position: top center;
 }
 
+
 .spad {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1033,12 +1034,13 @@ ol {
 }
 
 .about__pic__item {
-  height: 235px;
-  margin-right: -10px;
+  height: 280px;
   margin-bottom: 20px;
+    background-size: contain;
 }
 .about__pic__item.about__pic__item--large {
-  height: 490px;
+  height: 583px;
+  background-size: contain;
 }
 
 .about__text {
