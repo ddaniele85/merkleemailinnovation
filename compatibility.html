@@ -99,6 +99,17 @@
                             On Windows Outlook and Android mobile devices, content is still displayed effectively thanks to fallback images — ensuring your message remains clear, consistent, and impactful in every scenario.
                             </p>
 
+                            <p><strong style="color:#ff0000">Carousel & HotSpot:</strong> we recommend using a single fallback image, even if the component contains three or more images; the fallback image should summarise all the images of the components. Why a single image? These components require a very long piece of code to be created, and this code may cause the email to be clipped in Google, especially if the email content is lengthy. For HotSpot you can use an additional image for mobile.</p>
+
+                            <p><strong style="color:#ff0000">Video Player:</strong> to display a video in an email, you need a video file hosted on a CRM (if possible) or on the client’s website; unfortunately, it is not possible to use a YouTube link or ID for direct playback. The link must be something like: https://www.yourwebsite.com/video/filename.mp4.<br><br>
+                            Videos in marketing emails should be kept very small to ensure fast loading and high deliverability. Use a thumbnail image (under 100–200 KB) that links to the video hosted on an external site. If embedding directly, keep files under 10 MB, with a duration of 30–60 seconds and a width of around 600–900 pixels. <br><br>
+                            You will need a poster image, which is the image people will see in the email while the video loads. Your poster image should be a still from the video with a play icon overlaid, so users know it is a video. You can also use this image to include instructions on how to play the video. After creating the image, upload it to your server or ESP.</p>
+
+                            <p><strong style="color:#ff0000">Accordion, CSS Animations & Hamburger Menu:</strong> as the functionality is not supported in Outlook and Gmail, the entire accordion content will be displayed as static.</p>
+
+
+                            
+
 
 
 
