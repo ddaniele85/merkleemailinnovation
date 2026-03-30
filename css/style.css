@@ -146,11 +146,7 @@ ol {
   background-size: cover;
   background-position: top center;
 }
-.set-innerbg {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top center;
-}
+
 .spad {
   padding-top: 100px;
   padding-bottom: 100px;
