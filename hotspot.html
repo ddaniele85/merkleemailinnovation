@@ -23,7 +23,143 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-
+  <style>
+               /** HOTSPOT CSS - to copy in your style /**
+               /* Test to see if device has the ability to have checked */
+               @media only screen and (-webkit-min-device-pixel-ratio:0), (min--moz-device-pixel-ratio:0) {
+               #webkitnocheck:checked ~ .fallback {display: none;}
+               #webkitnocheck:checked ~ div .interactive {display: block !important;max-height: none !important;}
+               .gradient {background: -webkit-linear-gradient(#e0c29e, #a98c70, #e4c8a3, #fcdeb4);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+               }
+               /* Specific Yahoo! Detection */
+               @media screen yahoo {
+               .fallback {display: block !important;max-height: none;}
+               .interactive {display: none !important;}
+               }
+               /* Specific Samsung Mail detection */
+               @media screen and (-webkit-min-device-pixel-ratio: 0) {
+               #MessageViewBody .fallback, body.MsgBody .fallback {display: block !important;}
+               #MessageViewBody .interactive, body.MsgBody .interactive {display: none !important;}
+               #MessageViewBody .samsung {display: none !important;}
+               }
+               /* Specific Gmail detection */
+               @media screen and (max-width:9999px) {
+               u + .gmailbody .fallback {display: block !important;max-height: none;}
+               u + .gmailbody .interactive {display: none!important;}
+               }
+               /*Start of interactive CSS */
+               /* Background image Desktop */
+               @media only screen and (-webkit-min-device-pixel-ratio:0),(min--moz-device-pixel-ratio:0) {
+               .dynasties {position: relative; display: block !important; overflow: hidden; width: 640px;height: 640px;background-image: url(https://assets.merkle.com/is/image/merkle/AdobeStock_1563501105-RG-A1-1920x1080-1:Image-Card-L?op_sharpen=1&op_usm=1.0,0.3,1.0,0);background-size: cover;}
+               /* Buttons */
+               .hotspot1,.hotspot2,.hotspot3,.hotspot4,.hotspot5 {visibility: visible!important; display: block !important; max-height: 33px !important;position: absolute!important;z-index: 1;left: -1000px;top: -1000px;width: 27px;height: 27px;background-size: cover;background-position: center;-webkit-animation: pulse 2s ease 0s infinite;border-radius: 23px;-webkit-box-shadow: 0px 0px 5px 5px rgba(50, 50, 50, 0.5);cursor: pointer;}
+               .hotspot1,.hotspot2,.hotspot3,.hotspot4,.hotspot5 {background-image: url(https://fakeimg.pl/54x54/);}
+               /* Content Labels Position Desktop */
+               #hotspot1-content {position: absolute;left: 45px;top: 70px;z-index: 1;}
+               #hotspot2-content {position: absolute;left: 45px;top: 70px;z-index: 1;}
+               #hotspot3-content {position: absolute;left: 45px;top: 70px;z-index: 1;}
+               #hotspot4-content {position: absolute;left: 45px;top: 70px;z-index: 1;}
+               #hotspot5-content {position: absolute;left: 45px;top: 70px;z-index: 1;}
+               /* keyframe animation - button pulse */
+               @-webkit-keyframes pulse {
+               0% {opacity: 0.7;-webkit-transform: scale(1);}
+               50% {opacity: 1;-webkit-transform: scale(1.2);}
+               100% {opacity: 0.7;-webkit-transform: scale(1);}
+               }
+               /* Desktop button positions */
+               .hotspot1 {left: 430px !important;top: 420px !important;}
+               .hotspot2 {left: 170px !important;top: 240px !important;}
+               .hotspot3 {left: 100px !important; top: 320px !important;}
+               .hotspot4 {left: 120px !important;top: 430px !important;}
+               .hotspot5 {left: 460px !important;top: 890px !important;}
+               /* If button checked desktop */
+               #hotspot1:checked ~ div #hotspot1-content {display: block !important;z-index: 10;}
+               #hotspot1:checked ~ div .hotspot1 {display: block !important;position: absolute;left: 535px !important;top: 80px !important;z-index: 11;height: 50px;width: 50px;background-image: url('https://fakeimg.pl/50x33/?text=Close');-webkit-animation: none;border-radius: 0;-webkit-box-shadow: none;}
+               #hotspot1:checked ~ div .hotspot2 {display: block !important;}
+               #hotspot1:checked ~ div .hotspot3 {display: block !important;}
+               #hotspot1:checked ~ div .hotspot4 {display: block !important;}
+               #hotspot1:checked ~ div .hotspot5 {display: block !important;}
+               #hotspot2:checked ~ div #hotspot2-content {display: block !important;z-index: 10;}
+               #hotspot2:checked ~ div .hotspot1 {display: block !important;}
+               #hotspot2:checked ~ div .hotspot2 {display: block !important;position: absolute;left: 535px !important;top: 80px !important;z-index: 11;height: 50px;width: 50px;background-image: url('https://fakeimg.pl/50x33/?text=Close');-webkit-animation: none;border-radius: 0;-webkit-box-shadow: none;}
+               #hotspot2:checked ~ div .hotspot3 {display: block !important;}
+               #hotspot2:checked ~ div .hotspot4 {display: block !important;}
+               #hotspot2:checked ~ div .hotspot5 {display: block !important;}
+               #hotspot3:checked ~ div #hotspot3-content {display: block !important;z-index: 10;}
+               #hotspot3:checked ~ div .hotspot2 {display: block !important;}
+               #hotspot3:checked ~ div .hotspot3 {display: block !important;position: absolute;left: 535px !important;top: 80px !important;z-index: 11;height: 50px;width: 50px;background-image: url('https://fakeimg.pl/50x33/?text=Close');-webkit-animation: none;border-radius: 0;-webkit-box-shadow: none;}
+               #hotspot3:checked ~ div .hotspot4 {display: block !important;}
+               #hotspot3:checked ~ div .hotspot5 {display: block !important;}
+               #hotspot4:checked ~ div #hotspot4-content {display: block !important;z-index: 10;}
+               #hotspot4:checked ~ div .hotspot1 {display: block !important;}
+               #hotspot4:checked ~ div .hotspot2 {display: block !important;}
+               #hotspot4:checked ~ div .hotspot3 {display: block !important;}
+               #hotspot4:checked ~ div .hotspot4 {display: block !important;position: absolute;left: 535px !important;top: 80px !important;z-index: 11;height: 50px;width: 50px;background-image: url('https://fakeimg.pl/50x33/?text=Close');-webkit-animation: none;border-radius: 0;-webkit-box-shadow: none;}
+               #hotspot4:checked ~ div .hotspot5 {display: block !important;}
+               #hotspot5:checked ~ div #hotspot5-content {display: block !important;z-index: 10;}
+               #hotspot5:checked ~ div .hotspot1 {display: block !important;}
+               #hotspot5:checked ~ div .hotspot2 {display: block !important;}
+               #hotspot5:checked ~ div .hotspot3 {display: block !important;}
+               #hotspot5:checked ~ div .hotspot4 {display: block !important;}
+               #hotspot5:checked ~ div .hotspot5 {display: block !important;position: absolute;left: 535px !important;top: 80px !important;z-index: 11;background-image: url('https://fakeimg.pl/50x33/?text=Close');-webkit-animation: none;border-radius: 0;-webkit-box-shadow: none; }
+               /* Background image Mobile */
+               @media only screen and (max-width: 420px) {
+               .dynasties {position: relative;display: block !important;overflow: hidden;width: 100vw;height: 100vw;background-image: url(https://assets.merkle.com/is/image/merkle/AdobeStock_1563501105-RG-A1-1920x1080-1:Image-Card-L?op_sharpen=1&op_usm=1.0,0.3,1.0,0);background-size: 100vw 100vw;}
+               /* Buttons */
+               .hotspot1m, .hotspot2m, .hotspot3m, .hotspot4m, .hotspot5m {visibility: visible!important;display: block !important;max-height: 33px !important;position: absolute!important;z-index: 1;left: -1000px;top: -1000px;width: 27px;height: 27px;background-size: cover;background-position: center;-webkit-animation: pulse 2s ease 0s infinite;border-radius: 23px;-webkit-box-shadow: 0px 0px 5px 5px rgba(50, 50, 50, 0.5);cursor: pointer;}
+               .hotspot1m, .hotspot2m, .hotspot3m, .hotspot4m, .hotspot5m {background-image: url('https://fakeimg.pl/54x54/');}
+               /* Content Labels Position Mobile */
+               #hotspot1m-content {position: absolute;left: 5vw;top: 2vw; z-index: 1;}
+               #hotspot2m-content {position: absolute;left: 5vw;top: 2vw; z-index: 1;}
+               #hotspot3m-content {position: absolute;left: 5vw;top: 2vw; z-index: 1;}
+               #hotspot4m-content {position: absolute;left: 5vw;top: 2vw;z-index: 1;}
+               #hotspot5m-content {position: absolute;left: 5vw;top: 2vw;z-index: 1;}
+               /* keyframe animation - button pulse */
+               @-webkit-keyframes pulse {
+               0% {opacity: 0.7;-webkit-transform: scale(1);}
+               50% {opacity: 1;-webkit-transform: scale(1.2);}
+               100% {opacity: 0.7;-webkit-transform: scale(1); }
+               }
+               /* Mobile button positions */
+               .hotspot1m {left: 86vw !important;top: 70vw !important;}
+               .hotspot2m {left: 27vw !important;top: 40vw !important;}
+               .hotspot3m {left: 15vw !important;top: 55vw !important;}
+               .hotspot4m {left: 20vw !important;top: 70vw !important; }
+               .hotspot5m {left: 63vw !important;top: 123vw !important;}
+               }
+               /* If button checked mobile */
+               #hotspot1m:checked ~ div #hotspot1m-content {display: block !important;z-index: 10;}
+               #hotspot1m:checked ~ div .hotspot1m {display: block !important;position: absolute;left: 86vw !important;top: 3vw !important; z-index: 11;background-image: url('https://fakeimg.pl/50x33/?text=Close');-webkit-animation: none;border-radius: 0; -webkit-box-shadow: none;}
+               #hotspot1m:checked ~ div .hotspot2m {display: block !important;}
+               #hotspot1m:checked ~ div .hotspot3m {display: block !important;}
+               #hotspot1m:checked ~ div .hotspot4m {display: block !important;}
+               #hotspot1m:checked ~ div .hotspot5m {display: block !important;}
+               #hotspot2m:checked ~ div #hotspot2m-content {display: block !important;z-index: 10;}
+               #hotspot2m:checked ~ div .hotspot1m {display: block !important; }
+               #hotspot2m:checked ~ div .hotspot2m {display: block !important;position: absolute;left: 86vw !important;top: 3vw !important; z-index: 11;background-image: url('https://fakeimg.pl/50x33/?text=Close');-webkit-animation: none;border-radius: 0;-webkit-box-shadow: none;}
+               #hotspot2m:checked ~ div .hotspot3m {display: block !important;}
+               #hotspot2m:checked ~ div .hotspot4m {display: block !important;}
+               #hotspot2m:checked ~ div .hotspot5m {display: block !important;}
+               #hotspot3m:checked ~ div #hotspot3m-content {display: block !important; z-index: 10;}
+               #hotspot3m:checked ~ div .hotspot1m {display: block !important;}
+               #hotspot3m:checked ~ div .hotspot2m { display: block !important;}
+               #hotspot3m:checked ~ div .hotspot3m {display: block !important; position: absolute;left: 86vw !important;top: 3vw !important; z-index: 11;background-image: url('https://fakeimg.pl/50x33/?text=Close');-webkit-animation: none;border-radius: 0;-webkit-box-shadow: none;}
+               #hotspot3m:checked ~ div .hotspot4m {display: block !important;}
+               #hotspot3m:checked ~ div .hotspot5m {display: block !important;}
+               #hotspot4m:checked ~ div #hotspot4m-content {display: block !important;z-index: 10;}
+               #hotspot4m:checked ~ div .hotspot1m {display: block !important;}
+               #hotspot4m:checked ~ div .hotspot2m {display: block !important;}
+               #hotspot4m:checked ~ div .hotspot3m {display: block !important;}
+               #hotspot4m:checked ~ div .hotspot4m {display: block !important;position: absolute;left: 86vw !important;top: 3vw !important;z-index: 11;background-image: url('https://fakeimg.pl/50x33/?text=Close');-webkit-animation: none;border-radius: 0;-webkit-box-shadow: none;}
+               #hotspot4m:checked ~ div .hotspot5m {display: block !important;}
+               #hotspot5m:checked ~ div #hotspot5m-content {display: block !important;z-index: 10;}
+               #hotspot5m:checked ~ div .hotspot1m {display: block !important;}
+               #hotspot5m:checked ~ div .hotspot2m {display: block !important;}
+               #hotspot5m:checked ~ div .hotspot3m {display: block !important;}
+               #hotspot5m:checked ~ div .hotspot4m {display: block !important;}
+               #hotspot5m:checked ~ div .hotspot5m {display: block !important;position: absolute;left: 86vw !important;top: 3vw !important;z-index: 11;background-image: url('https://fakeimg.pl/50x33/?text=Close');-webkit-animation: none;border-radius: 0;-webkit-box-shadow: none;}
+               /** HOTSPOT CSS - to copy in your style /**      
+  </style>
 <body>
     <!-- Page Preloder -->
     <div id="preloder">
@@ -116,7 +252,11 @@
         </div>
     </section>
     <!-- About Section End -->
-
+    <section class="about">
+        <div align="center">
+            <iframe style="border: none;" src="showcase/spot.html" height="640" width="640" title="Hot Spot"></iframe>
+        </div>
+    </section>
 <section class="latest">
     <div class="container">
             <div class="row">
