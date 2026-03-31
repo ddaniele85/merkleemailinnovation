@@ -165,37 +165,48 @@ ol {
 .text-white a {
   color: #fff;
 }
+
+.embed-nav .code-types{display: none !important;}
 /* Pie chart */
 
     .pie-chart {
         background:
             radial-gradient(
                 circle closest-side,
-                transparent 95%,
+                transparent 66%,
                 #040e4b 0
             ),
             conic-gradient(
-                #4e79a7 0,
-                #4e79a7 18%,
-                #f28e2c 0,
-                #f28e2c 61%,
-                #e15759 0,
-                #e15759 100%
+                #ff0000 0,
+                #ff0000 40%,
+                #F56B56 0,
+                #F56B56 100%
         );
         position: relative;
         width: 100%;
-        min-height: 500px;
+        min-height: 350px;
         margin: 0;
+      
+    }
+    .pie-chart h2 {
+        position: absolute;
         
+        color:  #ffffff;
+    }
+    .pie-chart cite {
+        position: absolute;
+        bottom: 0;
+        font-size: 13px;
+        padding: 1rem;
+        color: #ffffff;
     }
     .pie-chart figcaption {
-      color: #ffffff;
-      font-size: 16px;
         position: absolute;
-        bottom: -3em;
+        bottom: 1em;
         right: 1em;
-        font-size: smaller;
+        font-size: 16px;
         text-align: right;
+        color:  #ffffff;
     }
     .pie-chart span:after {
         display: inline-block;
@@ -207,7 +218,6 @@ ol {
         border-radius: 0.2em;
         background: currentColor;
     }
-
 
 
 /* buttons */
