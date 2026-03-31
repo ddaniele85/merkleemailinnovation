@@ -166,7 +166,8 @@ ol {
   color: #fff;
 }
 
-
+iframe .embed-nav .code-types li{display: none !important;}
+.embed-nav .result-button-list li{}
 /* Pie chart */
 
     .pie-chart {
