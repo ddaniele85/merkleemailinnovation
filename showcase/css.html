@@ -43,8 +43,57 @@ table .cta td a {text-decoration: none !important;}
     ul, ol{padding: 0; Margin: 0 0 0 1em; list-style: disc;}
     ul li{margin:0px 0 10px 0;}
     ol li{margin:0px 0 10px 0;}
+    .cta-button:hover {
+    background-color: #0066ff !important;}
+    .ahover:hover {
+    color: #333333 !important;}
+
     /*Mobile*/
+    .fade-in {opacity: 1; animation-name: fadeInOpacity; animation-iteration-count: 1; animation-timing-function: ease-in; animation-duration: 2s; }
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fly-in-left{
+  -webkit-animation: flyinleftanim 1s ease; 
+}
+@-webkit-keyframes flyinleftanim
+{
+  0% {-webkit-transform: translateX(-1000px);}       
+  100% {-webkit-transform: translateX(0px);}
+}
+
+.pop-in{
+  -webkit-animation: popinanim 2s ease; 
+}
+
+@-webkit-keyframes popinanim{
+  0% { 
+    opacity:0;
+    -webkit-transform: scale(0.75);
+  }        
+  93% { 
+    opacity:0;
+    -webkit-transform: scale(0.75);
+  }        
+  98% { 
+    opacity:1;
+    -webkit-transform: scale(1.2);
+  }
+  100% { 
+    opacity:1;
+    -webkit-transform: scale(1);
+  }
+}
+
     @media only screen and (max-width:699px) {
+
+
       .maintable {width:100% !important;}
       .respimg {width:100% !important; height:auto !important;}
       .lfloat{float:left !important;}
@@ -94,49 +143,26 @@ table .cta td a {text-decoration: none !important;}
     div > u ~ .resptab {min-width: 100%;}
     }
     /* This center the email on Gmail and Outlook mobile ends */
-  </style>
-  <style>
-  	.pop-in{
-  -webkit-animation: popinanim 2s ease; 
-}
-
-@-webkit-keyframes popinanim{
-  0% { 
-    opacity:0;
-    -webkit-transform: scale(0.75);
-  }        
-  93% { 
-    opacity:0;
-    -webkit-transform: scale(0.75);
-  }        
-  98% { 
-    opacity:1;
-    -webkit-transform: scale(1.2);
-  }
-  100% { 
-    opacity:1;
-    -webkit-transform: scale(1);
-  }
-} 
-.fly-in-left{
-  -webkit-animation: flyinleftanim 1s ease; 
-}
-@-webkit-keyframes flyinleftanim
-{
-  0% {-webkit-transform: translateX(-1000px);}       
-  100% {-webkit-transform: translateX(0px);}
-}
-
-.bounce2 {
-  animation: bounce2 2s ease infinite;
-}
-@keyframes bounce2 {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-15px);}
-}
-
-
+  <style type="text/css">
+           
+       /** MP4 CSS **/
+       .video-wrapper {display:none;}
+       @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width:1024px){
+       .video-wrapper { display:block!important;width: 100%; height: auto }
+       .video-fallback { display:none!important; }
+       }
+       @supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
+       div[class^=video-wrapper] { display:block!important; }
+       div[class^=video-fallback] { display:none!important; }
+       }
+       #MessageViewBody .video-wrapper { display:block!important; }
+       #MessageViewBody .video-fallback { display:none!important; }
+       @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width:375px){
+       .video-wrapper { display:block!important; }
+       .video-fallback { display:none!important; }
+       #mob{width: 100%; height: auto !important}
+       }
+       /** MP4 CSS ends **/
   </style>
 </head>
 <body style="margin:0 auto;padding-bottom:10px;padding-right:0;padding-left:0;min-width:100%;background-color:#ffffff;line-height: 0px;">
@@ -146,55 +172,135 @@ table .cta td a {text-decoration: none !important;}
         <td valign="top" align="center" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;">
         <!-- Emailcontent -->
 
+        <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;" bgcolor="#040e4b">
+          <tr align="center">
+            <td align="center" style="padding-top: 40px; padding-bottom: 40px;">
+              <a href="" style="color: #000001; text-decoration: none;" target="_blank">
+                <img src="https://assets.merkle.com/is/content/merkle/merkle-full-logo-dt?ts=1765460889463&dpr=off" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" class="fade-in" border="0" width="142" height="18">
+              </a>
+            </td>
+          </tr>
+        </table>
 
-              <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
-                <tr align="center">
-                  <td align="center" style="padding-top: 40px; padding-bottom: 40px;">
-			              <table cellpadding="0" cellspacing="0" border="0" width="500" class="resptab" role="presentation" style="width:500px;"> 
-			                <tr align="center">
-			                  <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color:#000000; mso-line-height-rule: exactly;"> 
-			       Refresh the page if you missed some animations
-			                  </td>
-			                </tr>
-			              </table>
-                  </td>
-                </tr>              	
-                <tr align="center">
-                  <td align="center" style="padding-top: 40px; padding-bottom: 40px;">
-			              <table cellpadding="0" cellspacing="0" border="0" width="500" class="resptab" role="presentation" style="width:500px;"> 
-			                <tr align="center">
-			                  <td align="center" class="fly-in-left" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color:#000000; mso-line-height-rule: exactly;"> 
-			        Fly in left
-			                  </td>
-			                </tr>
-			              </table>
-                  </td>
-                </tr>
-                <tr align="center">
-                  <td align="center" style="padding-top: 40px; padding-bottom: 40px;">
-			              <table cellpadding="0" cellspacing="0" border="0" width="500" class="resptab" role="presentation" style="width:500px;"> 
-			                <tr align="center">
-			                  <td align="center" class="pop-in" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color:#000000; mso-line-height-rule: exactly;"> 
-			        Pop in
-			                  </td>
-			                </tr>
-			              </table>
-                  </td>
-                </tr>
-                <tr align="center">
-                  <td align="center" style="padding-top: 40px; padding-bottom: 40px;">
-			              <table cellpadding="0" cellspacing="0" border="0" width="500" class="resptab" role="presentation" style="width:500px;"> 
-			                <tr align="center">
-			                  <td align="center" class="bounce2" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color:#000000; mso-line-height-rule: exactly;"> 
-			        Bounce
-			                  </td>
-			                </tr>
-			              </table>
-                  </td>
-                </tr>                                 
-              </table>
+
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;" bgcolor="#040e4b"> 
+        <tr align="center">
+          <td align="center">
+            <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+              <tr align="center">
+                <th align="center" class="ldown" valign="top">
+                  <table cellpadding="0" cellspacing="0" border="0" width="300" class="resptab" role="presentation" style="width:300px;"> 
+                    <tr align="center">
+                      <td align="center" class="padlr20">
+                        <table cellpadding="0" cellspacing="0" border="0" width="280" class="resptab" role="presentation" style="width:280px;"> 
+                          <tr align="center">
+                            <td align="center" class="fly-in-left" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 24px; line-height: 28px; color:#ffffff; mso-line-height-rule: exactly; text-align: left; padding-bottom: 15px;">
+                              <strong>Lorem Ipsum</strong><br>Sit Amet, Consectetur Adipiscing Elit
+                            </td>
+                          </tr>
+                          <tr align="center">
+                            <td align="center" class="pop-in" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 21px; color:#ffffff; mso-line-height-rule: exactly; text-align: left;">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+                            </td>
+                          </tr> 
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </th>
+                <th align="center" class="rup" valign="top">
+                  <a href="">
+                    <img src="https://assets.merkle.com/is/image/merkle/Merkle-Teaser-Full-Width-Blue-03:Image-Square-M?op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha" alt="" style="display: block; border: 0" border="0" class="hide" width="300" height="300">
+                    <!--[if !mso]><!-->
+                      <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
+                        <img src="https://ddaniele85.github.io/merkleemailinnovation/img/hero/spotmob3.png" alt="" style="display: block; border: 0" border="0" class="respimg" width="" height="">
+                      </div>
+                    <!--<![endif]-->
+                  </a>
+                </th>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
        
-
+    <table cellpadding="0" cellspacing="0" border="0" width="600" id="vwhero" class="resptab" role="presentation" style="width:600px;" bgcolor="#ffffff">
+      <tr align="center">
+        <td align="center" class="padlr20 padbot40" style="padding-top:30px; padding-bottom:30px;">
+          <table cellpadding="0" cellspacing="0" border="0" width="520" class="resptab" role="presentation" style="width:520px;">
+            <tr align="center">
+              <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 21px; color:#33302E; mso-line-height-rule: exactly; text-align: left; padding-bottom: 15px;">
+                Lorem ipsum dolor sit
+              </td>
+            </tr>
+            <tr align="center">
+              <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 24px; line-height: 28px; color:#000000; mso-line-height-rule: exactly; text-align: left; padding-bottom: 15px;">
+                <strong>Lorem Ipsum</strong><br>Sit Amet, Consectetur Adipiscing Elit
+              </td>
+            </tr>
+            <tr align="center">
+              <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 21px; color:#33302E; mso-line-height-rule: exactly; text-align: left;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+              </td>
+            </tr>           
+            <tr align="center">
+              <td align="left" style="padding-top:25px;">
+                <table cellpadding="0" cellspacing="0" border="0" class="cta resptab cta-button" role="presentation" style="border-radius:25px; border:2px solid #001E50, cur" bgcolor="#001E50">
+                  <tr align="center">
+                    <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 12px; color:#ffffff; mso-line-height-rule: exactly; text-decoration: none; font-weight:bold; padding-left: 30px; padding-right: 30px;  padding-top:15px; padding-bottom:14px;">
+                      <a href="##" target="_blank" class="ahover" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 12px; color:#ffffff; mso-line-height-rule: exactly; text-decoration: none; font-weight:bold;">CTA text</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+          <table cellpadding="0" cellspacing="0" border="0" width="600" id="sksocialfooter" class="resptab" role="presentation" style="width:600px;" bgcolor="#05051e">
+            <tr align="center">
+              <td align="center" class="padlr32" style="padding-top:24px; padding-bottom: 40px;">
+                <table cellpadding="0" cellspacing="0" border="0" width="488" class="resptab" role="presentation" style="width:488px;">
+                  <tr align="center">
+                    <td align="center">
+                      <table cellpadding="0" cellspacing="0" border="0" role="presentation">
+                        <tr align="center">
+                          <td align="center" width="28">
+                            <a href="##" style="color: #ffffff; text-decoration: none;" target="_blank"><img src="https://www.merkle.com/etc.clientlibs/merkle-site/clientlibs/clientlib-site/resources/images/social-logo/linkedin-dt.svg" alt="Twitter" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 10px; font-weight: normal; color: #ffffff; line-height: 10px; mso-line-height-rule: exactly; max-width: 28px;" border="0" class="linkedin_hover" width="28" height="28"></a>
+                          </td>
+                          <td align="center" class="hide" width="10"></td>
+                          <td align="center" width="28" class="padl20">
+                            <a href="##" style="color: #ffffff; text-decoration: none;" target="_blank"><img src="https://www.merkle.com/etc.clientlibs/merkle-site/clientlibs/clientlib-merkle/resources/v2/icons/social/youtube-dt.svg" alt="Youtube" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 10px; font-weight: normal; color: #ffffff; line-height: 10px; mso-line-height-rule: exactly; max-width: 28px;" border="0" class="yt_hover" width="28" height="28"></a>
+                          </td>
+                          <td align="center" class="hide" width="10"></td>
+                          <td align="center" width="28" class="padl20">
+                            <a href="##" style="color: #ffffff; text-decoration: none;" target="_blank"><img src="https://www.merkle.com/etc.clientlibs/merkle-site/clientlibs/clientlib-site/resources/images/social-logo/instagram-dt.svg" alt="Instagram" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 10px; font-weight: normal; color: #ffffff; line-height: 10px; mso-line-height-rule: exactly; max-width: 28px;" border="0" class="ig_hover" width="28" height="28"></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td align="center" class="padtop40 padbot40" style="padding-top:20px; padding-bottom:20px">
+                      <table cellpadding="0" cellspacing="0" border="0" width="488" class="resptab" role="presentation" style="width:488px;border-bottom: 1px solid rgba(241, 58, 29, 0.3);">
+                        <tr align="center">
+                          <td height="1" style="font-size:1px;line-height:1px">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; color:#ffffff; mso-line-height-rule: exactly; text-align: left; padding-top:16px;">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br><br>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
         <!-- Emailcontent -->
         </td>
       </tr>

@@ -94,48 +94,228 @@ table .cta td a {text-decoration: none !important;}
     div > u ~ .resptab {min-width: 100%;}
     }
     /* This center the email on Gmail and Outlook mobile ends */
-  </style>
-  <style type="text/css">
-  			/** Accordion CSS **/
-input { display: none !important; }
-input[id="effect"] + div[class="em_show_g"] { display: none; }
-input[id="effect2"] + div[class="em_show_g"] { display: none; }
-input[id="effect3"] + div[class="em_show_g"] { display: none; }
-input[id="effect4"] + div[class="em_show_g"] { display: none; }
-input[id="effect5"] + div[class="em_show_g"] { display: none; }
-input[id="effect"]:checked + div[class="em_show_g"] { display: block !important; height: auto !important; width: auto !important; overflow: visible !important; max-height: 1420px !important; }
-input[id="effect2"]:checked + div[class="em_show_g"] { display: block !important; height: auto !important; width: auto !important; overflow: visible !important; max-height: 1420px !important; }
-input[id="effect3"]:checked + div[class="em_show_g"] { display: block !important; height: auto !important; width: auto !important; overflow: visible !important; max-height: 1420px !important; }
-input[id="effect4"]:checked + div[class="em_show_g"] { display: block !important; height: auto !important; width: auto !important; overflow: visible !important; max-height: 1420px !important; }
-input[id="effect5"]:checked + div[class="em_show_g"] { display: block !important; height: auto !important; width: auto !important; overflow: visible !important; max-height: 1420px !important; }
+  </style>    
+  <style>
 
- @media screen yahoo {
-input[id="effect"] + div[class="em_show_g"] {
-display: block;
-}
-input[id="effect2"] + div[class="em_show_g"] {
-display: block;
-}
-input[id="effect3"] + div[class="em_show_g"] {
-display: block;
-}
-input[id="effect4"] + div[class="em_show_g"] {
-display: block;
-}
-input[id="effect5"] + div[class="em_show_g"] {
-display: block;
-}
-.em_show_g {
-display: block !important;
-height: auto !important;
-width: auto !important;
-overflow: visible !important;
-max-height: 1400px !important;
-}
-}
-.aolReplacedBody .em_show_g { display: block !important; height: auto !important; width: auto !important; overflow: visible !important; max-height: 1400px !important; }		
-		/** Accordion CSS ends **/
-  </style>
+      @media {
+
+       @font-face {
+
+       font-family: 'bbcreithsansrg1';
+
+       src: url('http://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansrg1.eot');
+
+       src: url('http://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansrg1.eot') format('embedded-opentype'), url('http://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansrg1.woff2') format('woff2'), url('http://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansrg1.woff') format('woff'), url('http://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansrg1.ttf') format('truetype'), url('http://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansrg1.svg#bbcreithsansrg1') format('svg');
+
+      }
+
+      @font-face {
+
+            font-family: 'bbcreithsansabd';
+
+            src: url('https://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansabd.eot');
+
+            src: url('https://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansabd.eot') format('embedded-opentype'), url('https://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansabd.woff2') format('woff2'), url('https://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansabd.woff') format('woff'), url('https://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansabd.ttf') format('truetype'), url('https://images.emlcdn.net/cdn/86/QHf1d86b2/bbcreithsansabd.svg#bbcreithsansabd') format('svg');
+
+            } 
+
+      
+
+      @font-face {
+
+      font-family:''Century Gothic pro bd' bd';
+
+      src:url('https://use.typekit.net/af/40bdad/00000000000000007735ba11/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3') format('woff2');
+
+      font-weight:700;
+
+      }
+
+      
+
+      @font-face {
+
+      font-family:''Century Gothic pro bd' reg';
+
+      src:url('https://use.typekit.net/af/78c6b9/00000000000000007735ba1f/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3') format('woff2');
+
+      font-weight:400;
+
+      }    
+
+       
+
+       
+
+      }
+
+    </style>
+
+    <style>
+
+      .background {background-color: #040e4b;}    
+
+  .open {cursor:pointer;-webkit-tap-highlight-color:transparent;}
+
+  [class^="content"] {max-height: 0;overflow: hidden;transition: max-height .5s linear;}
+
+  #open1:checked ~* .content1 {max-height:800px;} 
+
+  #open1:checked ~ .background {background-color: #040e4b;background-image: url(https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/volcano-bg.jpg);}   
+
+  #open2:checked ~* .content2 {max-height:800px;}    
+
+  #open2:checked ~ .background {background-color: #040e4b;background-image: url(https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/sun-bg.jpg);background-color: #331805;}   
+
+  #open3:checked ~* .content3 {max-height:800px;}    
+
+  #open3:checked ~ .background {background-color: #040e4b;background-image: url(https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/weather-bg.jpg);background-color: #2A2814;}   
+
+  #open4:checked ~* .content4 {max-height:800px;}    
+
+  #open4:checked ~ .background {background-color: #040e4b;background-image: url(https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/oceans-bg.jpg);background-color: #001C23;}   
+
+  #open5:checked ~* .content5 {max-height:800px;}    
+
+  #open5:checked ~ .background {background-color: #040e4b;background-image: url(https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/humans-bg.jpg);}     
+
+  .copy {color: #ffffff; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif font-size: 18px; line-height: 1.5; margin:0 45px;} 
+
+  .plus {animation: pulse 1.5s ease infinite;}
+
+  @keyframes pulse {0% {transform: scale(1.1);}50% {transform: scale(0.8);}100% {transform: scale(1.1);}}  
+
+  @media screen and (max-width:800px) { 
+
+  .w800 {
+
+   width: 100%!important;
+
+   min-width: 100%!important;
+
+   max-width: 1000px!important;
+
+   height: auto!important;
+
+  }          
+
+      }
+
+  @media screen and (max-width:600px) {    
+
+  .copy {margin: 0 30px!important;}  
+
+  .mobbg {padding: 20px 0 0!important; background: url("https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/mob-bg.jpg") no-repeat; background-position: top center; background-size: 100% 100%;}  
+
+  .select {font-size: 18px!important;margin: 20px 10px 20px 0!important;} 
+
+  .logo {width: 70%; height: auto; max-width: 250px;}
+
+  .background {background-image:none;} 
+
+      }
+
+    </style>
+
+    <!--interactive module css start-->
+
+    <style type="text/css">
+
+      @media only screen and (-webkit-min-device-pixel-ratio:0), (min--moz-device-pixel-ratio:0) {
+
+      #webkitnocheck:checked ~* .fallback {
+
+       display: none;
+
+      }
+
+      #webkitnocheck:checked ~ div .interactive {
+
+       display:block !important;
+
+       max-height: none!important;
+
+      }
+
+      .background {background: url('https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/default-bgpp.jpg') no-repeat;max-width: 800px; width: 100%; margin: 0 auto;transition: background .8s;background-color: #040e4b;}      
+
+      }   
+
+      .& .interactive {
+
+      display:none !important;
+
+      }
+
+      u + .body .interactive {
+
+       display: none!important;
+
+      }
+
+      #MessageViewBody .fallback { display:block !important; }    
+
+      #MessageViewBody .interactive, body.MsgBody .interactive {
+
+       display: none !important;
+
+      }
+
+      #MessageViewBody .samsung { display:none !important; } 
+
+      [class="x_interactive"] {
+
+       display: none!important;
+
+      }
+
+      body[data-outlook-cycle] .interactive {
+
+       display: none!important;
+
+      }    
+
+          body[data-outlook-cycle] .background {background-image: none!important;}
+
+    </style>
+        <!--interactive module css end-->
+
+    <!--[if (mso)|(mso 16)]>
+
+      <style type="text/css">
+
+        a {text-decoration: none;}
+
+      </style>
+
+    <![endif]-->
+
+    <!--[if mso]>
+
+      <style type="text/css">
+
+        table, td, div, p { font-family: Helvetica, Arial, sans-serif !important;  line-height:normal;  }
+
+      </style>
+
+    <![endif]-->
+
+    <!--[if gte mso 9]>
+
+      <xml>
+
+        <o:OfficeDocumentSettings>
+
+          <o:AllowPNG/>
+
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+
+        </o:OfficeDocumentSettings>
+
+      </xml>
+
+    <![endif]-->
+  
 </head>
 <body style="margin:0 auto;padding-bottom:10px;padding-right:0;padding-left:0;min-width:100%;background-color:#ffffff;line-height: 0px;">
   <center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
@@ -143,483 +323,557 @@ max-height: 1400px !important;
       <tr>
         <td valign="top" align="center" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;">
         <!-- Emailcontent -->
-       
+           <!--[if !mso]>
 
-						<table cellpadding="0" cellspacing="0" border="0" width="700" class="resptab" role="presentation" style="width:700px;">
-							<tr align="center">
-								<td align="center" class="lrpad">
-									<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" style="border: 2px solid #000000;">
-										<tbody>
-											<tr>						
-												<td align="center" valign="top">
-													<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-														<tbody>
-															<tr>
-																<td>
-																	<!--[if !mso 9]><!-->
-																	<label for="effect">
-																		<!--<![endif]-->
-																		<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																			<tbody>
-																				<tr>
-																					<td height="15" style="line-height:1px;font-size:1px">&nbsp;</td>
-																				</tr>
-																				<tr>
-																					<td align="center" valign="top">
-																						<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-																							<tbody>
-																								<tr>
-																									<td width="25">&nbsp;</td>
-																									<td align="left" valign="top" style="font-family:'Lato',sans-serif;font-size:20px;line-height:23px;color:#000;font-weight:bold;text-decoration:none; cursor:pointer;"> CSS3 Accordion </td>
-																									<td valign="top" width="20">
-																										<table class="em_bg" width="20" border="0" cellspacing="0" cellpadding="0" align="center" style="border-radius:50%;background-color:#000">
-																											<tbody>
-																												<tr>
-																													<td height="20" align="center" valign="middle" style="font-family:'Open Sans',sans-serif;font-size:15px;line-height:20px;color:#fff;font-weight:bold; cursor:pointer;">+ </td>
-																												</tr>
-																											</tbody>
-																										</table>
-																									</td>
-																									<td width="10">&nbsp;</td>
-																								</tr>
-																							</tbody>
-																						</table>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td height="15" style="line-height:1px;font-size:1px">&nbsp;</td>
-																				</tr>
-																			</tbody>
-																		</table>
-																		<!--[if !mso 9]><!-->
-																	</label>
-																	<!--<![endif]-->
-																</td>
-															</tr>
-															<tr>
-																<td>
-																	<!--[if !mso 9]><!-->
-																	<input style="display:none;" id="effect" checked="checked" type="radio" name="01">
-																	<!--<![endif]-->
-																	<div class="em_show_g">
-																		<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																			<tbody>
-																				<tr>
-																					<td height="2" style="line-height:0px;font-size:0px" bgcolor="#000000"><img src="https://www.emailmonks.com/emailTemplates/new_images/spacer.gif" width="1" height="1" alt="" border="0" style="display:block;"></td>
-																				</tr>
-																				<tr>
-																					<td height="30" class="em_ht2">&nbsp;</td>
-																				</tr>
-																				<tr>
-																					<td align="center" valign="top" style="padding-left:25px;padding-right:30px">
-																						<table border="0" width="100%" role="presentation" cellspacing="0" cellpadding="0" align="center">
-																							<tbody>
-																								<tr>
-																									<td align="left" valign="top" style="font-family:'Open Sans',sans-serif;font-size:13px;line-height:16px;color:#000"> After navigation and menus in email, it’s also very much possible to actually use accordion in emails. CSS3 Accordion uses CSS3 techniques to develop
-																										accordions that are mainly used for mobile emails. 
-																									</td>
-																								</tr>
-																							</tbody>
-																						</table>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td height="25" class="em_ht">&nbsp;</td>
-																				</tr>
-																			</tbody>
-																		</table>
-																	</div>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-													<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-														<tbody>
-															<tr>
-																<td>
-																	<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																		<tbody>
-																			<tr>
-																				<td height="2" style="line-height:0px;font-size:0px" bgcolor="#000000"><img src="https://www.emailmonks.com/emailTemplates/new_images/spacer.gif" width="1" height="1" alt="" border="0" style="display:block;"></td>
-																			</tr>
-																			<tr>
-																				<td>
-																					<!--[if !mso 9]><!-->
-																					<label for="effect2">
-																						<!--<![endif]-->
-																						<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																							<tbody>
-																								<tr>
-																									<td height="15" style="line-height:1px;font-size:1px">&nbsp;</td>
-																								</tr>
-																								<tr>
-																									<td align="center" valign="top">
-																										<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-																											<tbody>
-																												<tr>
-																													<td width="25">&nbsp;</td>
-																													<td align="left" valign="top" style="font-family:'Lato',sans-serif;font-size:20px;line-height:23px;color:#000;font-weight:bold; cursor:pointer;"> Advantages </td>
-																													<td valign="top" width="20">
-																														<table class="em_bg" width="20" border="0" cellspacing="0" cellpadding="0" align="center" style="border-radius:50%;background-color:#000">
-																															<tbody>
-																																<tr>
-																																	<td height="20" align="center" valign="middle" style="font-family:'Open Sans',sans-serif;font-size:15px;line-height:20px;color:#fff;font-weight:bold; cursor:pointer;">+ </td>
-																																</tr>
-																															</tbody>
-																														</table>
-																													</td>
-																													<td width="10">&nbsp;</td>
-																												</tr>
-																											</tbody>
-																										</table>
-																									</td>
-																								</tr>
-																								<tr>
-																									<td height="15" style="line-height:1px;font-size:1px">&nbsp;</td>
-																								</tr>
-																							</tbody>
-																						</table>
-																						<!--[if !mso 9]><!-->
-																					</label>
-																					<!--<![endif]-->
-																				</td>
-																			</tr>
-																			<tr>
-																				<td>
-																					<!--[if !mso 9]><!-->
-																					<input style="display:none;" id="effect2" type="radio" name="01">
-																					<!--<![endif]-->
-																					<div class="em_show_g">
-																						<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																							<tbody>
-																								<tr>
-																									<td height="2" style="line-height:0px;font-size:0px" bgcolor="#000000"><img src="https://www.emailmonks.com/emailTemplates/new_images/spacer.gif" width="1" height="1" alt="" border="0" style="display:block;"></td>
-																								</tr>
-																								<tr>
-																									<td height="30" class="em_ht2">&nbsp;</td>
-																								</tr>
-																								<tr>
-																									<td align="center" valign="top" style="padding-left:25px;padding-right:30px">
-																										<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-																											<tbody>
-																												<tr>
-																													<td align="left" valign="top" style="font-family:'Open Sans',sans-serif;font-size:13px;line-height:20px;color:#000"> 1. Stack-up content<br>
-																														2. Better UX<br>
-																														3. Track clicks<br>
-																														4. Questionnaire for feedback emails &amp; Progressive enhancement and engagement 
-																													</td>
-																												</tr>
-																											</tbody>
-																										</table>
-																									</td>
-																								</tr>
-																								<tr>
-																									<td height="25" class="em_ht">&nbsp;</td>
-																								</tr>
-																							</tbody>
-																						</table>
-																					</div>
-																				</td>
-																			</tr>
-																		</tbody>
-																	</table>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-													<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-														<tbody>
-															<tr>
-																<td>
-																	<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																		<tbody>
-																			<tr>
-																				<td>
-																					<!--[if !mso 9]><!-->
-																					<label for="effect3">
-																						<!--<![endif]-->
-																						<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																							<tbody>
-																								<tr>
-																									<td height="2" style="line-height:0px;font-size:0px" bgcolor="#000000"><img src="https://www.emailmonks.com/emailTemplates/new_images/spacer.gif" width="1" height="1" alt="" border="0" style="display:block;"></td>
-																								</tr>
-																								<tr>
-																									<td height="15" style="line-height:1px;font-size:1px">&nbsp;</td>
-																								</tr>
-																								<tr>
-																									<td align="center" valign="top">
-																										<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-																											<tbody>
-																												<tr>
-																													<td width="25">&nbsp;</td>
-																													<td align="left" valign="top" style="font-family:'Lato',sans-serif;font-size:20px;line-height:23px;color:#000;font-weight:bold; cursor:pointer;"> Application </td>
-																													<td valign="top" width="20">
-																														<table class="em_bg" width="20" border="0" cellspacing="0" cellpadding="0" align="center" style="border-radius:50%;background-color:#000">
-																															<tbody>
-																																<tr>
-																																	<td height="20" align="center" valign="middle" style="font-family:'Open Sans',sans-serif;font-size:15px;line-height:20px;color:#fff;font-weight:bold; cursor:pointer;">+ </td>
-																																</tr>
-																															</tbody>
-																														</table>
-																													</td>
-																													<td width="10">&nbsp;</td>
-																												</tr>
-																											</tbody>
-																										</table>
-																									</td>
-																								</tr>
-																								<tr>
-																									<td height="15" style="line-height:1px;font-size:1px">&nbsp;</td>
-																								</tr>
-																							</tbody>
-																						</table>
-																						<!--[if !mso 9]><!-->
-																					</label>
-																					<!--<![endif]-->
-																				</td>
-																			</tr>
-																			<tr>
-																				<td>
-																					<!--[if !mso 9]><!-->
-																					<input style="display:none;" id="effect3" type="radio" name="01">
-																					<!--<![endif]-->
-																					<div class="em_show_g">
-																						<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																							<tbody>
-																								<tr>
-																									<td height="2" style="line-height:0px;font-size:0px" bgcolor="#000000"><img src="https://www.emailmonks.com/emailTemplates/new_images/spacer.gif" width="1" height="1" alt="" border="0" style="display:block;"></td>
-																								</tr>
-																								<tr>
-																									<td height="30" class="em_ht2">&nbsp;</td>
-																								</tr>
-																								<tr>
-																									<td align="center" valign="top" style="padding-left:25px;padding-right:30px">
-																										<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-																											<tbody>
-																												<tr>
-																													<td align="left" valign="top" style="font-family:'Open Sans',sans-serif;font-size:13px;line-height:20px;color:#000"> 1. Multiple product categorization and grouping in e-commerce and retail sectors.<br>
-																														2. Technology and media companies can use accordion beneath menus for more information display.<br>
-																														3. Other industries sending information heavy emails. 
-																													</td>
-																												</tr>
-																											</tbody>
-																										</table>
-																									</td>
-																								</tr>
-																								<tr>
-																									<td height="25" class="em_ht1">&nbsp;</td>
-																								</tr>
-																							</tbody>
-																						</table>
-																					</div>
-																				</td>
-																			</tr>
-																		</tbody>
-																	</table>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-													<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-														<tbody>
-															<tr>
-																<td>
-																	<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																		<tbody>
-																			<tr>
-																				<td>
-																					<!--[if !mso 9]><!-->
-																					<label for="effect4">
-																						<!--<![endif]-->
-																						<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																							<tbody>
-																								<tr>
-																									<td height="2" style="line-height:0px;font-size:0px" bgcolor="#000000"><img src="https://www.emailmonks.com/emailTemplates/new_images/spacer.gif" width="1" height="1" alt="" border="0" style="display:block;"></td>
-																								</tr>
-																								<tr>
-																									<td height="15" style="line-height:1px;font-size:1px">&nbsp;</td>
-																								</tr>
-																								<tr>
-																									<td align="center" valign="top">
-																										<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-																											<tbody>
-																												<tr>
-																													<td width="25">&nbsp;</td>
-																													<td align="left" valign="top" style="font-family:'Lato',sans-serif;font-size:20px;line-height:23px;color:#000;font-weight:bold; cursor:pointer;"> Limitations </td>
-																													<td valign="top" width="20">
-																														<table class="em_bg" width="20" border="0" cellspacing="0" cellpadding="0" align="center" style="border-radius:50%;background-color:#000">
-																															<tbody>
-																																<tr>
-																																	<td height="20" align="center" valign="middle" style="font-family:'Open Sans',sans-serif;font-size:15px;line-height:20px;color:#fff;font-weight:bold; cursor:pointer;">+ </td>
-																																</tr>
-																															</tbody>
-																														</table>
-																													</td>
-																													<td width="10">&nbsp;</td>
-																												</tr>
-																											</tbody>
-																										</table>
-																									</td>
-																								</tr>
-																								<tr>
-																									<td height="15" style="line-height:1px;font-size:1px">&nbsp;</td>
-																								</tr>
-																							</tbody>
-																						</table>
-																						<!--[if !mso 9]><!-->
-																					</label>
-																					<!--<![endif]-->
-																				</td>
-																			</tr>
-																			<tr>
-																				<td>
-																					<!--[if !mso 9]><!-->
-																					<input style="display:none;" id="effect4" type="radio" name="01">
-																					<!--<![endif]-->
-																					<div class="em_show_g">
-																						<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																							<tbody>
-																								<tr>
-																									<td height="2" style="line-height:0px;font-size:0px" bgcolor="#000000"><img src="https://www.emailmonks.com/emailTemplates/new_images/spacer.gif" width="1" height="1" alt="" border="0" style="display:block;"></td>
-																								</tr>
-																								<tr>
-																									<td height="30" class="em_ht2">&nbsp;</td>
-																								</tr>
-																								<tr>
-																									<td align="center" valign="top" style="padding-left:25px;padding-right:30px">
-																										<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-																											<tbody>
-																												<tr>
-																													<td align="left" valign="top" style="font-family:'Open Sans',sans-serif;font-size:13px;line-height:20px;color:#000">The accordion will work with most mobile email clients as well as in Apple mail and Outlook for Mac on desktop. The accordion will work with email systems that support external CSS only. Windows based clients might not support such accordion as it uses CSS3. The accordions will also not work with gmail app and third party apps.</td>
-																												</tr>
-																											</tbody>
-																										</table>
-																									</td>
-																								</tr>
-																								<tr>
-																									<td height="25" class="em_ht1">&nbsp;</td>
-																								</tr>
-																							</tbody>
-																						</table>
-																					</div>
-																				</td>
-																			</tr>
-																		</tbody>
-																	</table>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-													<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-														<tbody>
-															<tr>
-																<td>
-																	<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																		<tbody>
-																			<tr>
-																				<td>
-																					<!--[if !mso 9]><!-->
-																					<label for="effect5">
-																						<!--<![endif]-->
-																						<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																							<tbody>
-																								<tr>
-																									<td height="2" style="line-height:0px;font-size:0px" bgcolor="#000000"><img src="https://www.emailmonks.com/emailTemplates/new_images/spacer.gif" width="1" height="1" alt="" border="0" style="display:block;"></td>
-																								</tr>
-																								<tr>
-																									<td height="15" style="line-height:1px;font-size:1px">&nbsp;</td>
-																								</tr>
-																								<tr>
-																									<td align="center" valign="top">
-																										<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-																											<tbody>
-																												<tr>
-																													<td width="25">&nbsp;</td>
-																													<td align="left" valign="top" style="font-family:'Lato',sans-serif;font-size:20px;line-height:23px;color:#000;font-weight:bold; cursor:pointer;"> Compatibility </td>
-																													<td valign="top" width="20">
-																														<table class="em_bg" width="20" border="0" cellspacing="0" cellpadding="0" align="center" style="border-radius:50%;background-color:#000">
-																															<tbody>
-																																<tr>
-																																	<td height="20" align="center" valign="middle" style="font-family:'Open Sans',sans-serif;font-size:15px;line-height:20px;color:#fff;font-weight:bold; cursor:pointer;">+ </td>
-																																</tr>
-																															</tbody>
-																														</table>
-																													</td>
-																													<td width="10">&nbsp;</td>
-																												</tr>
-																											</tbody>
-																										</table>
-																									</td>
-																								</tr>
-																								<tr>
-																									<td height="15" style="line-height:1px;font-size:1px">&nbsp;</td>
-																								</tr>
-																							</tbody>
-																						</table>
-																						<!--[if !mso 9]><!-->
-																					</label>
-																					<!--<![endif]-->
-																				</td>
-																			</tr>
-																			<tr>
-																				<td>
-																					<!--[if !mso 9]><!-->
-																					<input style="display:none;" id="effect5" type="radio" name="01">
-																					<!--<![endif]-->
-																					<div class="em_show_g">
-																						<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0">
-																							<tbody>
-																								<tr>
-																									<td height="2" style="line-height:0px;font-size:0px" bgcolor="#000000"><img src="https://www.emailmonks.com/emailTemplates/new_images/spacer.gif" width="1" height="1" alt="" border="0" style="display:block;"></td>
-																								</tr>
-																								<tr>
-																									<td height="30" class="em_ht2">&nbsp;</td>
-																								</tr>
-																								<tr>
-																									<td align="center" valign="top" style="padding-left:25px;padding-right:30px">
-																										<table width="100%" role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
-																											<tbody>
-																												<tr>
-																													<td class="em_white" align="left" valign="top" style="font-family:'Open Sans',sans-serif;font-size:13px;line-height:20px;color:#000">This email is a normal email layout for desktop user(except Apple Mail and Outlook MAC), but it gets converted to accordion when users read it on mobile email client, native apps. <br>
-																														<br>
-																														Compatibility list : <br>
-																														- Apple Mail, <br>
-																														- Outlook 2011(MAC), <br>
-																														- Outlook 2016(MAC), <br>
-																														- iPhone 4, <br>
-																														- iPhone 5, <br>
-																														- iPhone 6 and 6+, <br>
-																														- Android 4.2, 4.3+, <br>
-																														- Android 2.3 <br>
-																														<br>
-																														Remember, 50% of mobile email opens are on Apple devices. 
-																													</td>
-																												</tr>
-																											</tbody>
-																										</table>
-																									</td>
-																								</tr>
-																								<tr>
-																									<td height="25" class="em_ht1">&nbsp;</td>
-																								</tr>
-																							</tbody>
-																						</table>
-																					</div>
-																				</td>
-																			</tr>
-																		</tbody>
-																	</table>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</td>						
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</table>
+      <!-- -->
+
+      <input type="checkbox" id="webkitnocheck" name="webkit" checked="checked" style="display:none;max-height:0;visibility:hidden;">
+
+      <input id="open1" style="display: none!important; max-height: 0; visibility: hidden;"
+
+      type="radio" name="opens" />
+
+      <input id="open2" style="display: none!important; max-height: 0; visibility: hidden;"
+
+      type="radio" name="opens" />
+
+      <input id="open3" style="display: none!important; max-height: 0; visibility: hidden;"
+
+      type="radio" name="opens" />
+
+      <input id="open4" style="display: none!important; max-height: 0; visibility: hidden;"
+
+      type="radio" name="opens" />
+
+      <input id="open5" style="display: none!important; max-height: 0; visibility: hidden;"
+
+      type="radio" name="opens" />
+
+    <!--<![endif]-->
+              <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;" bgcolor="#040e4b">
+          <tr align="center">
+            <td align="center" style="padding-top: 40px; padding-bottom: 40px;">
+              <a href="" style="color: #000001; text-decoration: none;" target="_blank">
+                <img src="https://assets.merkle.com/is/content/merkle/merkle-full-logo-dt?ts=1765460889463&dpr=off" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;"  border="0" width="142" height="18">
+              </a>
+            </td>
+          </tr>
+        </table>
+<table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" style="width:600px;" class="resptab">
+
+                                <tr>
+
+                                  <td align="center">
+
+
+
+                                    <div class="volcanoes">
+
+                                      <label for="open1" class="open">
+
+                                        <div style="width:100%; background: url('https://ddaniele85.github.io/merkleemailinnovation/img/hero/spotmob1.png') center; height: 100px;">
+
+                                          <table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                                            <tr>
+
+                                              <td align="left">
+
+                                                <p style="margin:0px; font-family: 'Century Gothic pro bd', arial, sans-serif; font-size: 23px; line-height: 1.5; color: #ffffff; font-weight: bold; padding: 20px 0 20px 30px; text-transform: uppercase;letter-spacing: 4px;">Topic 1</p>
+
+                                              </td>
+
+                                              <td align="right" valign="middle" style="padding: 30px 20px;">
+
+                                                <img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" style="display:inline-block;" width="38" height="38" alt="See more." class="plus">
+
+                                              </td>
+
+                                            </tr>
+
+                                          </table>
+
+                                        </div>
+
+                                      </label>
+
+                                      <div class="content1">
+
+                                        <table style="width: 100%; background-color: #040e4b;" border="0" cellspacing="0" cellpadding="0" align="center">
+
+                                          <tr>
+
+                                            <td align="center">
+
+
+                                              <a href="">
+                                                <img src="https://assets.merkle.com/is/image/merkle/clarins-cs-full-width-image-01?qlt=85&wid=1600&ts=1772830002461&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="hide" width="100%" height="">
+                                                <!--[if !mso]><!-->
+                                                  <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
+                                                    <img src="https://assets.merkle.com/is/image/merkle/clarins-cs-full-width-image-01?qlt=85&wid=1600&ts=1772830002461&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="respimg" width="100%">
+                                                  </div>
+                                                <!--<![endif]-->
+                                              </a>
+
+                                             
+
+                                            </td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>
+
+                                              <p class="copy" style="padding-top: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                                            </td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td align="center" style="padding: 30px 0 40px;">
+
+                                              <table role="presentation" width="200" border="0" cellspacing="0" cellpadding="0" style="width:200px;background-color: #ff0000;">
+
+                                                <tr>
+
+                                                  <td style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">
+
+                                                    <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">Read more</a>
+
+                                                  </td>
+
+                                                </tr>
+
+                                              </table>
+
+                                            </td>
+
+                                          </tr>
+
+                                        </table>
+
+                                      </div>
+
+                                    </div>
+
+                                    <div class="sun">
+
+                                      <label for="open2" class="open">
+
+                                        <div style="width:100%; background: url('https://ddaniele85.github.io/merkleemailinnovation/img/hero/spotmob4.png') center; height: 100px;">
+
+                                          <table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                                            <tr>
+
+                                              <td align="left">
+
+                                                <p style="margin:0px; font-family: 'Century Gothic pro bd', arial, sans-serif; font-size: 23px; line-height: 1.5; color: #ffffff; font-weight: bold; padding: 20px 0 20px 30px; text-transform: uppercase;letter-spacing: 4px;">Topic 2</p>
+
+                                              </td>
+
+                                              <td align="right" valign="middle" style="padding: 30px 20px;">
+
+                                                <img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" width="38" height="38" style="display:inline-block;" alt="See more." class="plus">
+
+                                              </td>
+
+                                            </tr>
+
+                                          </table>
+
+                                        </div>
+
+                                      </label>
+
+                                      <div class="content2">
+
+                                        <table style="width: 100%; background-color: #040e4b;" border="0" cellspacing="0" cellpadding="0" align="center">
+
+                                          <tr>
+                                            <td>
+                                                                                        <a href="">
+                                                <img src="https://assets.merkle.com/is/image/merkle/Signify-CS-hero-banner-1920?qlt=85&wid=1600&ts=1760595169337&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="hide" width="100%" height="">
+                                                <!--[if !mso]><!-->
+                                                  <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
+                                                    <img src="https://assets.merkle.com/is/image/merkle/Signify-CS-hero-banner-1920?qlt=85&wid=1600&ts=1760595169337&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="respimg" width="100%">
+                                                  </div>
+                                                <!--<![endif]-->
+                                              </a>
+
+                                            </td>
+
+   
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>
+
+                                              <p class="copy" style="padding-top: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                                            </td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td align="center" style="padding: 30px 0 40px;">
+
+
+                                              <table role="presentation" width="200" border="0" cellspacing="0" cellpadding="0" style="width:200px;background-color: #ff0000;">
+
+                                                <tr>
+
+                                                  <td style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">
+
+                                                    <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">Read more</a>
+
+                                                  </td>
+
+                                                </tr>
+
+                                              </table>
+
+                                            </td>
+
+                                          </tr>
+
+                                        </table>
+
+                                      </div>
+
+                                    </div>
+
+                                    <div class="weather">
+
+                                      <label for="open3" class="open">
+
+                                        <div style="width:100%; background: url('https://ddaniele85.github.io/merkleemailinnovation/img/hero/spotmob2.png') center; height: 100px;">
+
+                                          <table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                                            <tr>
+
+                                              <td align="left">
+
+                                                <p style="margin:0px; font-family: 'Century Gothic pro bd', arial, sans-serif; font-size: 23px; line-height: 1.5; color: #ffffff; font-weight: bold; padding: 20px 0 20px 30px; text-transform: uppercase;letter-spacing: 4px;">Topic 3</p>
+
+                                              </td>
+
+                                              <td align="right" valign="middle" style="padding: 30px 20px;">
+
+                                                <img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" width="38" height="38" style="display:inline-block;" alt="See more." class="plus">
+
+                                              </td>
+
+                                            </tr>
+
+                                          </table>
+
+                                        </div>
+
+                                      </label>
+
+                                      <div class="content3">
+
+                                        <table style="width: 100%; background-color: #040e4b;" border="0" cellspacing="0" cellpadding="0" align="center">
+
+                                          <tr>
+
+                                            <td align="center">
+
+
+                                              <a href="">
+                                                <img src="https://assets.merkle.com/is/image/merkle/Kellanova-CS-FullWidth-02?qlt=85&wid=1600&ts=1763399261782&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="hide" width="100%" height="">
+                                                <!--[if !mso]><!-->
+                                                  <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
+                                                    <img src="https://assets.merkle.com/is/image/merkle/Kellanova-CS-FullWidth-02?qlt=85&wid=1600&ts=1763399261782&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="respimg" width="100%">
+                                                  </div>
+                                                <!--<![endif]-->
+                                              </a>
+
+                                             
+
+                                            </td>
+
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>
+
+                                              <p class="copy" style="padding-top: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                                            </td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td align="center" style="padding: 30px 0 40px;">
+
+
+                                              <table role="presentation" width="200" border="0" cellspacing="0" cellpadding="0" style="width:200px;background-color: #ff0000;">
+
+                                                <tr>
+
+                                                  <td style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">
+
+                                                    <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">Read more</a>
+
+                                                  </td>
+
+                                                </tr>
+
+                                              </table>
+
+                                            </td>
+
+                                          </tr>
+
+                                        </table>
+
+                                      </div>
+
+                                    </div>
+
+                                    <div class="oceans">
+
+                                      <label for="open4" class="open">
+
+                                        <div style="width:100%; background: url('https://ddaniele85.github.io/merkleemailinnovation/img/hero/spotmob4.png') center; height: 100px;">
+
+                                          <table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                                            <tr>
+
+                                              <td align="left">
+
+                                                <p style="margin:0px; font-family: 'Century Gothic pro bd', arial, sans-serif; font-size: 23px; line-height: 1.5; color: #ffffff; font-weight: bold; padding: 20px 0 20px 30px; text-transform: uppercase;letter-spacing: 4px;">Topic 4</p>
+
+                                              </td>
+
+                                              <td align="right" valign="middle" style="padding: 30px 20px;">
+
+                                                <img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" width="38" height="38" style="display:inline-block;" alt="See more." class="plus">
+
+                                              </td>
+
+                                            </tr>
+
+                                          </table>
+
+                                        </div>
+
+                                      </label>
+
+                                      <div class="content4">
+
+                                        <table style="width: 100%; background-color: #040e4b;" border="0" cellspacing="0" cellpadding="0" align="center">
+
+                                          <tr>
+
+                                            <td align="center">
+
+
+                                              <a href="">
+                                                <img src="https://assets.merkle.com/is/image/merkle/Amica-CS-Full-Width-1920-01?qlt=85&wid=1600&ts=1766426652883&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="hide" width="100%" height="">
+                                                <!--[if !mso]><!-->
+                                                  <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
+                                                    <img src="https://assets.merkle.com/is/image/merkle/Amica-CS-Full-Width-1920-01?qlt=85&wid=1600&ts=1766426652883&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="respimg" width="100%">
+                                                  </div>
+                                                <!--<![endif]-->
+                                              </a>
+
+                                            </td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>
+
+                                              <p class="copy" style="padding-top: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                                            </td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td align="center" style="padding: 30px 0 40px;">
+
+
+                                              <table role="presentation" width="200" border="0" cellspacing="0" cellpadding="0" style="width:200px;background-color: #ff0000;">
+
+                                                <tr>
+
+                                                  <td style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">
+
+                                                    <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">Read more</a>
+
+                                                  </td>
+
+                                                </tr>
+
+                                              </table>
+
+                                            </td>
+
+                                          </tr>
+
+                                        </table>
+
+                                      </div>
+
+                                    </div>
+
+                                    <div class="humans">
+
+                                      <label for="open5" class="open">
+
+                                        <div style="width:100%; background: url('https://ddaniele85.github.io/merkleemailinnovation/img/hero/spotmob3.png') center; height: 100px;">
+
+                                          <table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                                            <tr>
+
+                                              <td align="left">
+
+                                                <p style="margin:0px; font-family: 'Century Gothic pro bd', arial, sans-serif; font-size: 23px; line-height: 1.5; color: #ffffff; font-weight: bold; padding: 20px 0 20px 30px; text-transform: uppercase;letter-spacing: 4px;">Topic 5</p>
+
+                                              </td>
+
+                                              <td align="right" valign="middle" style="padding: 30px 20px;">
+
+                                                <img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" width="38" height="38" style="display:inline-block;" alt="See more." class="plus">
+
+                                              </td>
+
+                                            </tr>
+
+                                          </table>
+
+                                        </div>
+
+                                      </label>
+
+                                      <div class="content5">
+
+                                        <table style="width: 100%; background-color: #040e4b;" border="0" cellspacing="0" cellpadding="0" align="center">
+
+                                          <tr>
+
+                                            <td align="center">
+                                              <a href="">
+                                                <img src="https://assets.merkle.com/is/image/merkle/Satair-CS-hero-banner-1920?qlt=85&wid=1600&ts=1772830113778&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="hide" width="100%" height="">
+                                                <!--[if !mso]><!-->
+                                                  <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
+                                                    <img src="https://assets.merkle.com/is/image/merkle/Satair-CS-hero-banner-1920?qlt=85&wid=1600&ts=1772830113778&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="respimg" width="100%">
+                                                  </div>
+                                                <!--<![endif]-->
+                                              </a>
+
+                                            </td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td>
+
+                                              <p class="copy" style="padding-top: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                                            </td>
+
+                                          </tr>
+
+                                          <tr>
+
+                                            <td align="center" style="padding: 30px 0 40px;">
+
+
+                                              <table role="presentation" width="200" border="0" cellspacing="0" cellpadding="0" style="width:200px;background-color: #ff0000;">
+
+                                                <tr>
+
+                                                  <td style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">
+
+                                                    <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">Read more</a>
+
+                                                  </td>
+
+                                                </tr>
+
+                                              </table>
+
+                                            </td>
+
+                                          </tr>
+
+                                        </table>
+
+                                      </div>
+
+                                    </div>
+
+
+
+                                  </td>
+
+                                </tr>
+
+                              </table>
+          <table cellpadding="0" cellspacing="0" border="0" width="600" id="sksocialfooter" class="resptab" role="presentation" style="width:600px;" bgcolor="#05051e">
+            <tr align="center">
+              <td align="center" class="padlr32" style="padding-top:24px; padding-bottom: 40px;">
+                <table cellpadding="0" cellspacing="0" border="0" width="488" class="resptab" role="presentation" style="width:488px;">
+                  <tr align="center">
+                    <td align="center">
+                      <table cellpadding="0" cellspacing="0" border="0" role="presentation">
+                        <tr align="center">
+                          <td align="center" width="28">
+                            <a href="##" style="color: #ffffff; text-decoration: none;" target="_blank"><img src="https://www.merkle.com/etc.clientlibs/merkle-site/clientlibs/clientlib-site/resources/images/social-logo/linkedin-dt.svg" alt="Twitter" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 10px; font-weight: normal; color: #ffffff; line-height: 10px; mso-line-height-rule: exactly; max-width: 28px;" border="0" class="respimg" width="28" height="28"></a>
+                          </td>
+                          <td align="center" class="hide" width="10"></td>
+                          <td align="center" width="28" class="padl20">
+                            <a href="##" style="color: #ffffff; text-decoration: none;" target="_blank"><img src="https://www.merkle.com/etc.clientlibs/merkle-site/clientlibs/clientlib-merkle/resources/v2/icons/social/youtube-dt.svg" alt="Youtube" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 10px; font-weight: normal; color: #ffffff; line-height: 10px; mso-line-height-rule: exactly; max-width: 28px;" border="0" class="respimg" width="28" height="28"></a>
+                          </td>
+                          <td align="center" class="hide" width="10"></td>
+                          <td align="center" width="28" class="padl20">
+                            <a href="##" style="color: #ffffff; text-decoration: none;" target="_blank"><img src="https://www.merkle.com/etc.clientlibs/merkle-site/clientlibs/clientlib-site/resources/images/social-logo/instagram-dt.svg" alt="Instagram" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 10px; font-weight: normal; color: #ffffff; line-height: 10px; mso-line-height-rule: exactly; max-width: 28px;" border="0" class="respimg" width="28" height="28"></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td align="center" class="padtop40 padbot40" style="padding-top:20px; padding-bottom:20px">
+                      <table cellpadding="0" cellspacing="0" border="0" width="488" class="resptab" role="presentation" style="width:488px;border-bottom: 1px solid rgba(241, 58, 29, 0.3);">
+                        <tr align="center">
+                          <td height="1" style="font-size:1px;line-height:1px">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; color:#ffffff; mso-line-height-rule: exactly; text-align: left; padding-top:16px;">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br><br>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+
+
         <!-- Emailcontent -->
         </td>
       </tr>
