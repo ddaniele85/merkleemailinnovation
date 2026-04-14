@@ -396,6 +396,7 @@ iframe .embed-nav .code-types li{display: none !important;}
   opacity: 1;
   visibility: visible;
 }
+
 .header__nav__menu ul li:last-child {
   margin-right: 0;
 }
@@ -424,6 +425,7 @@ iframe .embed-nav .code-types li{display: none !important;}
   padding: 8px 20px;
   text-transform: uppercase;
 }
+.header__nav__menu ul li .dropdown li a:hover{color: #040e4b;}
 .header__nav__menu ul li .dropdown li a:after {
   display: none;
 }
@@ -1973,6 +1975,7 @@ iframe .embed-nav .code-types li{display: none !important;}
     margin: 0;
     color: #ffffff;
     font-weight: 600;
+    text-transform: uppercase;
   }
 
   .slicknav_nav .slicknav_row:hover {
@@ -1988,7 +1991,7 @@ iframe .embed-nav .code-types li{display: none !important;}
   }
 
   .slicknav_nav {
-    background: #222222;
+    background: #FF0000;
   }
 
   .slicknav_btn {
