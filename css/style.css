@@ -380,7 +380,10 @@ iframe .embed-nav .code-types li{display: none !important;}
   display: inline-block;
   margin-right: 45px;
   position: relative;
+  color: #ffffff;
+  text-transform: uppercase;
 }
+
 .header__nav__menu ul li.active a:after {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -428,6 +431,9 @@ iframe .embed-nav .code-types li{display: none !important;}
 .header__nav__menu ul li .dropdown li a:hover{color: #040e4b;}
 .header__nav__menu ul li .dropdown li a:after {
   display: none;
+}
+.slicknav_arrow {
+    display: none !important;
 }
 .header__nav__menu ul li a {
   font-size: 15px;

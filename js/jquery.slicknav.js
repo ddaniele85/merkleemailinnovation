@@ -252,10 +252,23 @@
         });
 
         // click on menu parent
-        $this.mobileNav.on('click', '.' + prefix + '_item', function (e) {
-            e.preventDefault();
-            $this._itemClick($(this));
-        });
+       // click su link parent → apre/chiude dropdown
+$this.mobileNav.on('click', 'li.' + prefix + '_parent > a', function (e) {
+    e.preventDefault();
+
+    var $link = $(this);
+    var $li = $link.parent();
+
+    // trova elemento interno usato dal plugin
+    var $item = $li.children('.' + prefix + '_item');
+
+    // fallback se struttura diversa
+    if (!$item.length) {
+        $item = $li.find('.' + prefix + '_item').first();
+    }
+
+    $this._itemClick($item);
+});
 
         // check for keyboard events on menu button and menu parents
         $($this.btn).keydown(function (e) {
