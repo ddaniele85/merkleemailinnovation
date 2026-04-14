@@ -426,8 +426,9 @@ iframe .embed-nav .code-types li{display: none !important;}
   color: #ffffff;
   padding: 8px 20px;
   text-transform: uppercase;
+  font-weight: 400;
 }
-.header__nav__menu ul li .dropdown li a:hover{color: #040e4b;}
+.header__nav__menu ul li .dropdown li a:hover{color: #040e4b; font-weight: bold;}
 .header__nav__menu ul li .dropdown li a:after {
   display: none;
 }
