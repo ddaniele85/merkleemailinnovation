@@ -2233,3 +2233,9 @@ iframe .embed-nav .code-types li{display: none !important;}
     padding: 30px 40px 35px 35px;
   }
 }
+@media only screen and (max-width: 414px) {
+  .about__pic__item.about__pic__item--large {
+  height: 400px !important;
+
+}
+}
