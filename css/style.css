@@ -149,7 +149,7 @@ ol {
 
 
 .spad {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
@@ -2241,7 +2241,7 @@ iframe .embed-nav .code-types li{display: none !important;}
 }
 @media only screen and (max-width: 414px) {
   .about__pic__item.about__pic__item--large {
-  height: 400px !important;
+  height: 310px !important;
 
 }
 }
