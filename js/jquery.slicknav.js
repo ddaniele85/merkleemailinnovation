@@ -13,7 +13,7 @@
             appendTo: '',
             parentTag: 'a',
             closeOnClick: false,
-            allowParentLinks: false,
+            allowParentLinks: true,
             nestedParentLinks: true,
             showChildren: false,
             removeIds: true,
