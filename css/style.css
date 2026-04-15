@@ -1414,14 +1414,15 @@ iframe .embed-nav .code-types li{display: none !important;}
 }
 
 .blog__item {
-  border: 1px solid #222222;
+  border: 1px solid #ffffff;
   padding: 40px 48px 35px 30px;
   position: relative;
   z-index: 1;
   margin-bottom: 45px;
 }
+
 .blog__item:hover {
-  border: 1px solid transparent !important;
+  border: 1px solid #FF0000 !important;
   background: url(../img/blog/blog-2.jpg) no-repeat;
   background-size: cover;
 }
@@ -1469,6 +1470,10 @@ iframe .embed-nav .code-types li{display: none !important;}
 .blog__item a {
   font-size: 16px;
   color: #ffffff;
+}
+.blog__item a:hover,.blog__item a span:hover {
+
+  color: #FF0000;
 }
 .blog__item a span {
   font-size: 16px;
