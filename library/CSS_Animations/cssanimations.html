@@ -1,0 +1,820 @@
+<style>
+.fade-in {opacity: 1; animation-name: fadeInOpacity; animation-iteration-count: 1; animation-timing-function: ease-in; animation-duration: 2s; }
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+/*****************************/
+<style>
+	.fly-in-left{-webkit-animation: flyinleftanim 1s ease; }
+@-webkit-keyframes flyinleftanim
+{
+  0% {-webkit-transform: translateX(-1000px);}       
+  100% {-webkit-transform: translateX(0px);}
+}
+</style>
+/*****************************/
+<style>
+.pop-in{-webkit-animation: popinanim 2s ease;}
+
+@-webkit-keyframes popinanim{
+  0% { 
+    opacity:0;
+    -webkit-transform: scale(0.75);
+  }        
+  93% { 
+    opacity:0;
+    -webkit-transform: scale(0.75);
+  }        
+  98% { 
+    opacity:1;
+    -webkit-transform: scale(1.2);
+  }
+  100% { 
+    opacity:1;
+    -webkit-transform: scale(1);
+  }
+}
+	
+</style>
+/*****************************/
+<style>
+.loader {background: linear-gradient(to right, rgb(22, 113, 202) 50%, transparent 50%); animation: spin 1s infinite linear;}
+.loader:before {display: block;content: '';position: relative;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 90px;height: 90px;background: #ffffff;border-radius: 50%;}
+</style>
+/*****************************/
+<style>
+	.gelatine {
+  animation: gelatine 0.5s infinite;
+}
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+
+</style>
+/*****************************/
+<style>
+	.spin {
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+</style>
+/*****************************/
+<style>
+	.elastic-spin {
+  animation: elastic-spin 1s infinite ease;
+}
+@keyframes elastic-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(720deg); }
+}
+
+</style>
+/*****************************/
+<style>
+	.pulse {
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
+}
+</style>
+/*****************************/
+<style>
+	.flash {
+  animation: flash 500ms ease infinite alternate;
+}
+@keyframes flash {
+	from { opacity: 1; }	
+	to { opacity: 0; }
+}
+</style>
+/*****************************/
+<style>
+.hithere {animation: hithere 1s ease infinite;}
+@keyframes hithere {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+}
+</style>
+/*****************************/
+<style>
+	.grow {
+  animation: grow 2s ease infinite;
+}
+@keyframes grow {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+</style>
+/*****************************/
+<style>
+	.fade-out {
+  animation: fade-out 2s linear infinite;
+}
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+</style>
+/*****************************/
+<style>
+	.bounce {
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+</style>
+/*****************************/
+<style>
+	.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+</style>
+/*****************************/
+<style>
+	.shake {animation: shake 2s ease infinite;}
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+</style>
+/*****************************/
+<style>
+	.flip {backface-visibility: visible !important; animation: flip 2s ease infinite;}
+@keyframes flip {
+	0% {
+		transform: perspective(400px) rotateY(0);
+		animation-timing-function: ease-out;
+	}
+	40% {
+		transform: perspective(400px) translateZ(150px) rotateY(170deg);
+		animation-timing-function: ease-out;
+	}
+	50% {
+		transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+		animation-timing-function: ease-in;
+	}
+	80% {
+		transform: perspective(400px) rotateY(360deg) scale(.95);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: perspective(400px) scale(1);
+		animation-timing-function: ease-in;
+	}
+}
+
+</style>
+/*****************************/
+<style>
+	.swing {transform-origin: top center; animation: swing 2s ease infinite;}
+@keyframes swing {
+	20% { transform: rotate(15deg); }	
+	40% { transform: rotate(-10deg); }
+	60% { transform: rotate(5deg); }	
+	80% { transform: rotate(-5deg); }	
+	100% { transform: rotate(0deg); }
+}
+</style>
+/*****************************/
+<style>
+	.wobble {animation: wobble 2s ease infinite;}
+@keyframes wobble {
+  0% { transform: translateX(0%); }
+  15% { transform: translateX(-25%) rotate(-5deg); }
+  30% { transform: translateX(20%) rotate(3deg); }
+  45% { transform: translateX(-15%) rotate(-3deg); }
+  60% { transform: translateX(10%) rotate(2deg); }
+  75% { transform: translateX(-5%) rotate(-1deg); }
+  100% { transform: translateX(0%); }
+}
+</style>
+/*****************************/
+<style>
+	.fade-in-down {
+  animation: fade-in-down 2s ease infinite;
+}
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+/*****************************/
+<style>
+	.fade-in-left {
+  animation: fade-in-left 2s ease infinite;
+}
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
+/*****************************/
+<style>
+	.fade-out-down {
+  animation: fade-out-down 2s ease infinite;
+}
+@keyframes fade-out-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+</style>
+/*****************************/
+<style>
+	.fade-out-right {
+  animation: fade-out-right 2s ease infinite;
+}
+@keyframes fade-out-right {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+</style>
+/*****************************/
+<style>
+	.bounce-in {
+  animation: bounce-in 2s ease infinite;
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
+</style>
+/*****************************/
+<style>
+	.bounce-in-right {
+  animation: bounce-in-right 2s ease infinite;
+}
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+</style>
+/*****************************/
+<style>
+	.bounce-out {
+  animation: bounce-out 2s ease infinite;
+}
+@keyframes bounce-out {
+  0% { transform: scale(1); }
+  25% { transform: scale(.95); }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.3);
+  } 
+}
+</style>
+/*****************************/
+<style>
+.bounce-out-down {
+  animation: bounce-out-down 2s ease infinite;
+}
+@keyframes bounce-out-down {
+  0% { transform: translateY(0); }
+  20% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+</style>
+/*****************************/
+<style>
+.rotate-in-down-left {
+  animation: rotate-in-down-left 2s ease infinite;
+}
+@keyframes rotate-in-down-left {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+</style>
+/*****************************/
+<style>
+.rotate-in-up-left {
+  animation: rotate-in-up-left 2s ease infinite;
+}
+@keyframes rotate-in-up-left {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+</style>
+/*****************************/
+<style>
+.hinge {
+  animation: hinge 2s ease infinite;
+}
+@keyframes hinge {
+  0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }  
+  20%, 60% { transform: rotate(80deg); transform-origin: top left; animation-timing-function: ease-in-out; }  
+  40% { transform: rotate(60deg); transform-origin: top left; animation-timing-function: ease-in-out; } 
+  80% { transform: rotate(60deg) translateY(0); opacity: 1; transform-origin: top left; animation-timing-function: ease-in-out; } 
+  100% { transform: translateY(700px); opacity: 0; }
+}
+</style>
+/*****************************/
+<style>
+.roll-in {
+  animation: roll-in 2s ease infinite;
+}
+@keyframes roll-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+</style>
+/*****************************/
+<style>
+.roll-out {
+  animation: roll-out 2s ease infinite;
+}
+@keyframes roll-out {
+    0% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%) rotate(120deg);
+  }
+}
+</style>
+/*****************************/
+<style>
+      .grayscale-image {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      }
+      .grayscale-image:hover {
+      filter: grayscale(0%);
+      }
+</style>
+/*****************************/
+<style>
+	   .cta-button:hover {background-color: #0066ff !important;}
+    .ahover:hover {color: #333333 !important;}
+</style>
+/*****************************/
+
+
+
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Fade In effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center" class="fade-in" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold">
+          	This is the effect! 
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Fade In Left effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center" class="fly-in-left" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold">
+          	This is the effect! 
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Grayscale effect - hover the mouse on the picture
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://images.emlcdn.net/cdn/1001315/8acd6a21-e2f1-495f-8c28-c96af000d094/touch.png" alt="" style="display: block; border: 0; font-size: 16px; line-height: 16px;" border="0" class="respimg grayscale-image" width="180" height="250">
+          </td>
+        </tr>
+      </table>
+
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Change CTA Colour on mouse hover
+      	  </td>
+      	</tr>
+      	<tr align="center">
+      		<td align="left" style="padding-top:25px;">
+      			<table cellpadding="0" cellspacing="0" border="0" class="cta resptab cta-button" role="presentation" style="border-radius:25px; border:2px solid #001E50, cur" bgcolor="#001E50">
+      				<tr align="center">
+      					<td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 12px; color:#ffffff; mso-line-height-rule: exactly; text-decoration: none; font-weight:bold; padding-left: 30px; padding-right: 30px;  padding-top:15px; padding-bottom:14px;">
+      						<a href="##" target="_blank" class="ahover" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 12px; color:#ffffff; mso-line-height-rule: exactly; text-decoration: none; font-weight:bold;">CTA text</a>
+      					</td>
+      				</tr>
+      			</table>
+      		</td>
+      	</tr>
+      </table>
+
+
+
+
+
+
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Pop In effect <br><br>
+      	  </td>
+      	</tr>       
+        <tr align="center">
+          <td align="center" class="pop-in" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold">
+          	This is the effect! 
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Loader effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<div class="cell">
+          		<div class="circle loader"></div>
+          	</div>
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+      <tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Gelatine effect <br><br>
+      	  </td>
+      	</tr> 
+        <tr align="center">
+          <td align="center" class="gelatine" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold">
+          	This is the effect! 
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+      <tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Spin effect <br><br>
+      	  </td>
+      	</tr> 
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="spin" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Elastic Spin effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="elastic-spin" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Pulse effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center" class="pulse" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold">
+          	This is the effect! 
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Flash effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center" class="flash" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold">
+          	This is the effect! 
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Hi There effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="hithere" width="36" height="36">
+          </td>
+        </tr>
+      </table> 
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Grow effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="grow" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+      <tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Bounce effect <br><br>
+      	  </td>
+      	</tr> 
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="bounce" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Bounce 2 effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="bounce2" width="36" height="36">
+          </td>
+        </tr>
+      </table>        
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Shake effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="shake" width="36" height="36">
+          </td>
+        </tr>
+      </table> 
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Flip effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="flip" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Swing effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="swing" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Wobble effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="wobble" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Fade in Down effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="fade-in-down" width="36" height="36">
+          	
+          </td>
+        </tr>
+      </table> 
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Fade In Left effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="fade-in-left" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Fade Out Down effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="fade-out-down" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Bounce In effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="bounce-in" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+      <tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Bounce Out Down effect <br><br>
+      	  </td>
+      	</tr> 
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="bounce-out-down" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Rotate in Down Left effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="rotate-in-down-left" width="36" height="36">
+          	
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Roll In effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="roll-in" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Roll Out effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="roll-out" width="36" height="36">
+          </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+      	<tr>
+      	  <td align="center" style="padding-top:40px;font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 24px; color:#000000; mso-line-height-rule: exactly; font-weight: bold; text-align: left;">
+      	  	Hinge effect <br><br>
+      	  </td>
+      	</tr>
+        <tr align="center">
+          <td align="center">
+          	<img src="https://ddaniele85.github.io/merkleemailinnovation/img/icons/close.png" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="hinge" width="36" height="36">
+          </td>
+        </tr>
+      </table>              
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+<style>
+body{
+  padding:0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+  .carousel a{
+    position:absolute;
+    top:0px;
+    left:0px; 
+    -webkit-animation: car-anim 14s linear infinite;    
+  }
+
+  .carousel a:nth-child(1){
+    -webkit-animation-delay: 0s;    
+  }
+  .carousel a:nth-child(2){
+    -webkit-animation-delay: 2s;    
+  }
+  .carousel a:nth-child(3){
+    -webkit-animation-delay: 4s;    
+  }
+   .carousel a:nth-child(4){
+    -webkit-animation-delay: 6s;    
+  }
+   .carousel a:nth-child(5){
+    -webkit-animation-delay: 8s;    
+  }
+   .carousel a:nth-child(6){
+    -webkit-animation-delay: 10s;    
+  }
+
+
+  @-webkit-keyframes car-anim 
+  {
+      0% {
+        z-index:2;
+      }
+      33%{
+        z-index:2;
+      }
+      33.001%{
+        z-index:1;
+      }
+      100%{
+        z-index:1;
+      }
+  }
+
+/*  @-webkit-keyframes car-anim
+  {
+      0% {
+        z-index:3;
+      }
+      33%{
+        z-index:3;
+      }
+      33.001%{
+        z-index:2;
+      }
+      66%{
+        z-index:2;
+      }
+      66.001%{
+        z-index:1;
+      }
+      100%{
+        z-index:1;
+      }
+  }*/
+
+}
+
+
+</style>
+
+
+
+      <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;"> 
+        <tr align="center">
+          <td align="center">
+          	<div class="carousel fade car-cont">
+          		<a href="##">
+          			<img src="https://placehold.co/1200x800/?text=IMG1" border="0" width="600" height="400" class="respimg"></a>
+							<a href="##">
+								<img src="https://placehold.co/1200x800/?text=IMG2" border="0" width="600" height="400" class="respimg"></a>
+							<a href="##">
+								<img src="https://placehold.co/1200x800/?text=IMG3" border="0" width="600" height="400" class="respimg"></a>
+                <a href="##">
+                <img src="https://placehold.co/1200x800/?text=IMG4" border="0" width="600" height="400" class="respimg"></a>
+                <a href="##">
+                <img src="https://placehold.co/1200x800/?text=IMG5" border="0" width="600" height="400" class="respimg"></a>
+                <a href="##">
+                <img src="https://placehold.co/1200x800/?text=IMG6" border="0" width="600" height="400" class="respimg"></a>
+						</div>
+          </td>
+        </tr>
+      </table>

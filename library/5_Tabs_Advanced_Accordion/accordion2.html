@@ -1,0 +1,294 @@
+<style>
+.background {background-color: #040e4b;}    
+.open {cursor:pointer;-webkit-tap-highlight-color:transparent;}
+[class^="content"] {max-height: 0;overflow: hidden;transition: max-height .5s linear;}
+#open1:checked ~* .content1 {max-height:800px;} 
+#open1:checked ~ .background {background-color: #040e4b;background-image: url(https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/volcano-bg.jpg);}   
+#open2:checked ~* .content2 {max-height:800px;}    
+#open2:checked ~ .background {background-color: #040e4b;background-image: url(https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/sun-bg.jpg);background-color: #331805;}   
+#open3:checked ~* .content3 {max-height:800px;}    
+#open3:checked ~ .background {background-color: #040e4b;background-image: url(https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/weather-bg.jpg);background-color: #2A2814;}   
+#open4:checked ~* .content4 {max-height:800px;}    
+#open4:checked ~ .background {background-color: #040e4b;background-image: url(https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/oceans-bg.jpg);background-color: #001C23;}   
+#open5:checked ~* .content5 {max-height:800px;}    
+#open5:checked ~ .background {background-color: #040e4b;background-image: url(https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/humans-bg.jpg);}
+.copy {color: #ffffff; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif font-size: 18px; line-height: 1.5; margin:0 45px;} 
+.plus {animation: pulse 1.5s ease infinite;}
+@keyframes pulse {0% {transform: scale(1.1);}50% {transform: scale(0.8);}100% {transform: scale(1.1);}}  
+@media screen and (max-width:800px) { 
+.w800 {width: 100%!important; min-width: 100%!important; max-width: 1000px!important;height: auto!important;}
+}
+@media only screen and (-webkit-min-device-pixel-ratio:0), (min--moz-device-pixel-ratio:0) {
+  #webkitnocheck:checked ~* .fallback {display: none;}
+  #webkitnocheck:checked ~ div .interactive {display:block !important;max-height: none!important;}
+  .background {background: url('https://image.e.bbcmail.co.uk/lib/fe9013727761077872/m/45/default-bgpp.jpg') no-repeat;max-width: 800px; width: 100%; margin: 0 auto;transition: background .8s;background-color: #040e4b;}
+}   
+.& .interactive {display:none !important;}
+u + .body .interactive {display: none!important;}
+#MessageViewBody .fallback {display:block !important; }    
+#MessageViewBody .interactive, body.MsgBody .interactive {display: none !important;}
+#MessageViewBody .samsung {display:none !important; } 
+[class="x_interactive"] {display: none!important;}
+body[data-outlook-cycle] .interactive {display: none!important;}
+body[data-outlook-cycle] .background {background-image: none!important;}
+</style>
+
+
+<table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" style="width:600px;" class="resptab">
+  <!--[if !mso]><!-->
+<input type="checkbox" id="webkitnocheck" name="webkit" checked="checked" style="display:none;max-height:0;visibility:hidden;">
+<input id="open1" style="display: none!important; max-height: 0; visibility: hidden;"
+  type="radio" name="opens" />
+<input id="open2" style="display: none!important; max-height: 0; visibility: hidden;"
+  type="radio" name="opens" />
+<input id="open3" style="display: none!important; max-height: 0; visibility: hidden;"
+  type="radio" name="opens" />
+<input id="open4" style="display: none!important; max-height: 0; visibility: hidden;"
+  type="radio" name="opens" />
+<input id="open5" style="display: none!important; max-height: 0; visibility: hidden;"
+  type="radio" name="opens" />
+<!--<![endif]-->
+<tr>
+  <td align="center">
+    <div class="volcanoes">
+      <label for="open1" class="open">
+        <div style="width:100%; background: url('https://placehold.co/1200x200/?text=Closed Accordion IMG1') center; height: 100px;">
+          <table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="left">
+                <p style="margin:0px; font-family: 'Century Gothic pro bd', arial, sans-serif; font-size: 23px; line-height: 1.5; color: #ffffff; font-weight: bold; padding: 20px 0 20px 30px; text-transform: uppercase;letter-spacing: 4px;">Topic 1</p>
+              </td>
+              <td align="right" valign="middle" style="padding: 30px 20px;">
+                <img src="https://placehold.co/76x76/?text=X" style="display:inline-block;" width="38" height="38" alt="See more." class="plus">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </label>
+      <div class="content1">
+        <table style="width: 100%; background-color: #040e4b;" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+            <td align="center">
+              <a href="">
+                <img src="https://placehold.co/1200x800/?text=Open Accordion IMG1" alt="" style="display: block; border: 0" border="0" class="hide" width="100%" height="">
+                <!--[if !mso]><!-->
+                <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
+                  <img src="https://assets.merkle.com/is/image/merkle/clarins-cs-full-width-image-01?qlt=85&wid=1600&ts=1772830002461&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="respimg" width="100%">
+                </div>
+                <!--<![endif]-->
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="copy" style="padding-top: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 30px 0 40px;">
+              <table role="presentation" width="200" border="0" cellspacing="0" cellpadding="0" style="width:200px;background-color: #ff0000;">
+                <tr>
+                  <td style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">
+                    <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">Read more</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="sun">
+      <label for="open2" class="open">
+        <div style="width:100%; background: url('https://placehold.co/1200x200/?text=Closed Accordion IMG2') center; height: 100px;">
+          <table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="left">
+                <p style="margin:0px; font-family: 'Century Gothic pro bd', arial, sans-serif; font-size: 23px; line-height: 1.5; color: #ffffff; font-weight: bold; padding: 20px 0 20px 30px; text-transform: uppercase;letter-spacing: 4px;">Topic 2</p>
+              </td>
+              <td align="right" valign="middle" style="padding: 30px 20px;">
+                <img src="https://placehold.co/76x76/?text=X" width="38" height="38" style="display:inline-block;" alt="See more." class="plus">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </label>
+      <div class="content2">
+        <table style="width: 100%; background-color: #040e4b;" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+            <td>
+              <a href="">
+                <img src="https://placehold.co/1200x800/?text=Open Accordion IMG2" alt="" style="display: block; border: 0" border="0" class="hide" width="100%" height="">
+                <!--[if !mso]><!-->
+                <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
+                  <img src="https://assets.merkle.com/is/image/merkle/Signify-CS-hero-banner-1920?qlt=85&wid=1600&ts=1760595169337&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="respimg" width="100%">
+                </div>
+                <!--<![endif]-->
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="copy" style="padding-top: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 30px 0 40px;">
+              <table role="presentation" width="200" border="0" cellspacing="0" cellpadding="0" style="width:200px;background-color: #ff0000;">
+                <tr>
+                  <td style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">
+                    <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">Read more</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="weather">
+      <label for="open3" class="open">
+        <div style="width:100%; background: url('https://placehold.co/1200x200/?text=Closed Accordion IMG3') center; height: 100px;">
+          <table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="left">
+                <p style="margin:0px; font-family: 'Century Gothic pro bd', arial, sans-serif; font-size: 23px; line-height: 1.5; color: #ffffff; font-weight: bold; padding: 20px 0 20px 30px; text-transform: uppercase;letter-spacing: 4px;">Topic 3</p>
+              </td>
+              <td align="right" valign="middle" style="padding: 30px 20px;">
+                <img src="https://placehold.co/76x76/?text=X" width="38" height="38" style="display:inline-block;" alt="See more." class="plus">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </label>
+      <div class="content3">
+        <table style="width: 100%; background-color: #040e4b;" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+            <td align="center">
+              <a href="">
+                <img src="https://placehold.co/1200x800/?text=Open Accordion IMG3" alt="" style="display: block; border: 0" border="0" class="hide" width="100%" height="">
+                <!--[if !mso]><!-->
+                <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
+                  <img src="https://assets.merkle.com/is/image/merkle/Kellanova-CS-FullWidth-02?qlt=85&wid=1600&ts=1763399261782&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="respimg" width="100%">
+                </div>
+                <!--<![endif]-->
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="copy" style="padding-top: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 30px 0 40px;">
+              <table role="presentation" width="200" border="0" cellspacing="0" cellpadding="0" style="width:200px;background-color: #ff0000;">
+                <tr>
+                  <td style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">
+                    <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">Read more</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="oceans">
+      <label for="open4" class="open">
+        <div style="width:100%; background: url('https://placehold.co/1200x200/?text=Closed Accordion IMG4') center; height: 100px;">
+          <table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="left">
+                <p style="margin:0px; font-family: 'Century Gothic pro bd', arial, sans-serif; font-size: 23px; line-height: 1.5; color: #ffffff; font-weight: bold; padding: 20px 0 20px 30px; text-transform: uppercase;letter-spacing: 4px;">Topic 4</p>
+              </td>
+              <td align="right" valign="middle" style="padding: 30px 20px;">
+                <img src="https://placehold.co/76x76/?text=X" width="38" height="38" style="display:inline-block;" alt="See more." class="plus">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </label>
+      <div class="content4">
+        <table style="width: 100%; background-color: #040e4b;" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+            <td align="center">
+              <a href="">
+                <img src="https://placehold.co/1200x800/?text=Open Accordion IMG4" alt="" style="display: block; border: 0" border="0" class="hide" width="100%" height="">
+                <!--[if !mso]><!-->
+                <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
+                  <img src="https://assets.merkle.com/is/image/merkle/Amica-CS-Full-Width-1920-01?qlt=85&wid=1600&ts=1766426652883&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="respimg" width="100%">
+                </div>
+                <!--<![endif]-->
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="copy" style="padding-top: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 30px 0 40px;">
+              <table role="presentation" width="200" border="0" cellspacing="0" cellpadding="0" style="width:200px;background-color: #ff0000;">
+                <tr>
+                  <td style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">
+                    <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">Read more</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="humans">
+      <label for="open5" class="open">
+        <div style="width:100%; background: url('https://placehold.co/1200x200/?text=Closed Accordion IMG5') center; height: 100px;">
+          <table role="presentation" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="left">
+                <p style="margin:0px; font-family: 'Century Gothic pro bd', arial, sans-serif; font-size: 23px; line-height: 1.5; color: #ffffff; font-weight: bold; padding: 20px 0 20px 30px; text-transform: uppercase;letter-spacing: 4px;">Topic 5</p>
+              </td>
+              <td align="right" valign="middle" style="padding: 30px 20px;">
+                <img src="https://placehold.co/76x76/?text=X" width="38" height="38" style="display:inline-block;" alt="See more." class="plus">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </label>
+      <div class="content5">
+        <table style="width: 100%; background-color: #040e4b;" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+            <td align="center">
+              <a href="">
+                <img src="https://placehold.co/1200x800/?text=Open Accordion IMG5" alt="" style="display: block; border: 0" border="0" class="hide" width="100%" height="">
+                <!--[if !mso]><!-->
+                <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
+                  <img src="https://assets.merkle.com/is/image/merkle/Satair-CS-hero-banner-1920?qlt=85&wid=1600&ts=1772830113778&op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha&dpr=off" alt="" style="display: block; border: 0" border="0" class="respimg" width="100%">
+                </div>
+                <!--<![endif]-->
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="copy" style="padding-top: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 30px 0 40px;">
+              <table role="presentation" width="200" border="0" cellspacing="0" cellpadding="0" style="width:200px;background-color: #ff0000;">
+                <tr>
+                  <td style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">
+                    <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; font-family:HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.5; text-align: center; font-weight: bold;">Read more</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </td>
+</tr>

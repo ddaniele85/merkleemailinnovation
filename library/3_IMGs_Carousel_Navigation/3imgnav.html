@@ -1,0 +1,150 @@
+    <style type="text/css">
+      @media only screen and (-webkit-min-device-pixel-ratio:0), (min--moz-device-pixel-ratio:0) { 
+      #on:checked ~ .fallback { display:none; } 
+      #on:checked ~ div .interactive {display:block !important; max-height:none !important;}
+      }
+      @media screen yahoo { 
+      .fallback { display:block!important; max-height:none;} 
+      .interactive {display:none !important;}
+      div {overflow: visible!important} 
+      .mobileonly {overflow:hidden;} 
+      }    
+      /* Samsung Mail */
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      #MessageViewBody .fallback, body.MsgBody .fallback {display:block!important;}
+      #MessageViewBody .interactive, body.MsgBody .interactive {display:none !important;}
+      #MessageViewBody .samsung {display:none !important;}
+      }
+      /* Gmail */
+      @media screen and (max-width:9999px) {
+      u + .gmailbody .fallback {display:block!important; max-height:none;}
+      u + .gmailbody .interactive {display:none!important;}
+      }
+      /* Outlook iOS/Android */
+      body[data-outlook-cycle] .fallback {display:block! important;}
+      body[data-outlook-cycle] .interactive {display:none !important;}
+      /* Outlook Webmail */
+      [owa] .fallback, [id="x_body"] .fallback {display:block! important; }
+      [owa] .interactive, [id="x_body"] .interactive {display:none !important;}
+      /* Interactive CSS */
+      @media only screen and (-webkit-min-device-pixel-ratio:0), (min--moz-device-pixel-ratio:0) { 
+      body { -webkit-animation: bugfix infinite 1s;}
+      @-webkit-keyframes bugfix { 
+      from { padding: 0; } 
+      to { padding: 0; } 
+      }      
+      .carousel {position: relative;display: block !important;max-height: inherit !important;overflow: hidden;width: 600px;z-index: 1;}
+      .slider-wrapper {border:3px solid #444;max-width: 600px;margin: 0 auto;animation: slide infinite 3s alternate;}
+      .nav.nav-tabs{display:block;overflow:auto;white-space:nowrap; scroll-snap-align: center!important;}
+      .nav.nav-tabs li{display:inline-block; scroll-snap-align: center!important; animation: scroller 10s infinite; -webkit-animation-duration: 15s !important; animation-duration: 15s !important;}
+      .nav.nav-tabs li a{display:inline-block;background:mediumblue;color:#fff;padding:16px}
+      @keyframes scroller {
+      0%, 25%   { transform: translateX(0); }
+      33%,55%  { transform: translateX(-600px); }
+      65%,95%  { transform: translateX(-1200px); }
+      0% { transform: translateX(0px); }
+      }
+      .arrows {display: block !important;}      
+      .arrow {display: inline-block; width: 40px;height: 40px; padding-bottom: 40px; padding-left: 0px; padding-right: 0px;font-family: Arial, sans-serif;font-size: 12px; font-weight: bold;color:#ffffff;cursor: pointer; border-radius: 50%;}           
+      .arrow:hover {}
+      .left {position: absolute;left: 0px; bottom: 0px;z-index: 3;}  
+      .right {position: absolute;right: 0px;bottom: 0px;z-index: 3;}        
+      #one:checked~* .dot[name="one"] {border-color: #ffffff !important; background-color: #ffffff !important;}
+      #two:checked~* .dot[name="two"] { border-color: #ffffff !important;background-color: #ffffff !important;} 
+      #three:checked~* .dot[name="three"] { border-color: #ffffff !important; background-color: #ffffff !important;} 
+      #one:not(:checked)~* .first {display: none; opacity: 0;} 
+      #two:not(:checked)~* .second {display: none;opacity: 0;} 
+      #three:not(:checked)~* .third {display: none;  opacity: 0;}
+      input { display: none; max-height: 0px; visibility: hidden;}      
+      }
+      /* Interactive CSS mobile */
+      @media only screen and (max-width: 600px) { 
+      .hide { display: none!important;}
+      .carousel { position: relative;display: block !important; overflow: hidden;width: 100vw;max-width: 100%;height: auto;}
+      .left {left: 20px !important;}
+      .right {right: 20px !important;}
+      }     
+    </style>
+
+        <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;" bgcolor="#ffffff">
+          <tr align="center">
+            <td align="center">
+              <!--[if !mso]><<!-->
+              <input type="checkbox" name="webkit" id="on" value="on" checked="checked" style="display: none; max-height: 0px; visibility: hidden;">
+              <!--<![endif]-->
+              <!--start fallback-->
+              <div class="fallback">
+                <div>
+                  <table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;">
+                    <tr align="center">
+                      <td align="center">
+                        <a href="##" style="color: #000001; text-decoration: none;" target="_blank">
+                        	<img src="https://placehold.co/1200x800/?text=Fallback" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="respimg" width="600" height="400">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <!--end fallback-->
+              <!--start interactive-->
+              <!--[if !mso]><!-->
+              <div class="samsung">
+                <input type="radio" name="model" id="one" value="on" style="display: none; max-height: 0px; visibility: hidden;" checked="">
+                <input type="radio" name="model" id="two" value="on" style="display: none; max-height: 0px; visibility: hidden;">
+                <input type="radio" name="model" id="three" value="on" style="display: none; max-height: 0px; visibility: hidden;">            
+                <div class="interactive" style="display:none; max-height:0; line-height:0; font-size:0; mso-hide:all; padding: 0; margin: 0;">
+                  <div class="carousel" style="display:none;">
+                    <div class="first">
+                      <div>
+                        <a href="##" style="color: #000001; text-decoration: none;" target="_blank">
+                        	<img src="https://placehold.co/1200x800/?text=IMG1" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="respimg" width="600" height="400">
+                        </a>
+                      </div>
+                      <div style="display:none;" class="arrows">
+                        <div class="left">
+                          <label name="prev" for="three" class="arrow padbot20">
+                          	<img border="0" name="Cont_10" src="https://placehold.co/80x80?text=<" width="40" height="40" alt="previous" style="display:block;margin: 0 auto; background-color:"></label>
+                        </div>
+                        <div class="right">
+                          <label name="next" for="two" class="arrow padbot20"><img border="0" name="Cont_11" src="https://placehold.co/80x80?text=>" width="40" height="40" alt="next" style="display:block;margin: 0 auto;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="second">
+                      <div>
+                        <a href="##" style="color: #000001; text-decoration: none;" target="_blank">
+                        	<img src="https://placehold.co/1200x800/?text=IMG2" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="respimg" width="600" height="400">
+                        </a>
+                      </div>
+                      <div style="display:none;" class="arrows">
+                        <div class="left">
+                          <label name="prev" for="one" class="arrow padbot20"><img border="0" name="Cont_10" src="https://placehold.co/80x80?text=<" width="40" height="40" alt="previous" style="display:block;margin: 0 auto;"></label>
+                        </div>
+                        <div class="right">
+                          <label name="next" for="three" class="arrow padbot20"><img border="0" name="Cont_11" src="https://placehold.co/80x80?text=>" width="40" height="40" alt="next" style="display:block;margin: 0 auto;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="third">
+                      <div>
+                        <a href="##" style="color: #000001; text-decoration: none;" target="_blank">
+                        	<img src="https://placehold.co/1200x800/?text=IMG3" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="respimg" width="600" height="400">
+                        </a>
+                      </div>
+                      <div style="display:none;" class="arrows">
+                        <div class="left">
+                          <label name="prev" for="two" class="arrow padbot20"><img border="0" name="Cont_10" src="https://placehold.co/80x80?text=<" width="40" height="40" alt="previous" style="display:block;margin: 0 auto;"></label>
+                        </div>
+                        <div class="right">
+                          <label name="next" for="one" class="arrow padbot20"><img border="0" name="Cont_11" src="https://placehold.co/80x80?text=>" width="40" height="40" alt="next" style="display:block;margin: 0 auto;"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--<![endif]-->
+            </td>
+          </tr>
+        </table>
