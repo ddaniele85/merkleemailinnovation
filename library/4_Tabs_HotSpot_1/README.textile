@@ -1,0 +1,41 @@
+   ___              __  __  ___   
+  / _ \___ ___ ____/ / /  |/  /__ 
+ / , _/ -_) _ `/ _  / / /|_/ / -_)
+/_/|_|\__/\_,_/\_,_/ /_/  /_/\__/ 
+                                  
+
+- Component Integration
+Copy the CSS block <style></style> from the source HTML file.
+Paste the code within the email’s <head>, before the closing </head> tag.
+
+- Component Dimensions
+Default width: 600px.
+Ensure that:
+the HTML width attribute and the value defined in the inline style are consistent and identical.
+Always retain the px unit in inline styles.
+
+- Visual Customisation
+For advanced customisations, refer to the Email Development Team.
+
+- Tables (Layout)
+Identify all "resptab" classes applied to <table> elements.
+Replace them with the classes used in the target template for responsive behaviour.
+
+<table cellpadding="0" cellspacing="0" border="0" width="600" class="resptab" role="presentation" style="width:600px;" bgcolor="#ffffff">
+
+to be
+<table cellpadding="0" cellspacing="0" border="0" width="YOURTABLESIZE" class="TABLEMOBILECLASS" role="presentation" style="width:YOURTABLESIZEpx;" bgcolor="#ffffff">
+
+- Images
+Image width Default: 600px
+Must match the component width
+Image height Default: 600px
+Can be adjusted, but must remain consistent across all images
+Replace "respimg" classes with those defined in the template to ensure responsive image behaviour.
+You are also required extra images optimised for mobile.
+
+<img src="https://placehold.co/1200x800/?text=IMG1" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="respimg" width="600" height="400">
+
+to be
+<img src="https://placehold.co/1200x800/?text=IMG1" alt="" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; display: block; border: 0; font-size: 16px; font-weight: normal; color: #000001; line-height: 16px; mso-line-height-rule: exactly;" border="0" class="IMAGEMOBILECLASS" width="YOURIMAGEWIDTH" height="YOURIMAGEHEIGHT">
+
