@@ -1041,6 +1041,7 @@ iframe .embed-nav .code-types li{display: none !important;}
 .footer__copyright__text {
   margin-bottom: 0;
   font-weight: 300;
+  font-size: 0px;
 }
 .footer__copyright__text i {
   color: #FF0000;
