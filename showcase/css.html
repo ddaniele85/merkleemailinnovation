@@ -91,7 +91,7 @@ table .cta td a {text-decoration: none !important;}
   }
 }
 
-    @media only screen and (max-width:699px) {
+    @media only screen and (max-width:500px) {
 
 
       .maintable {width:100% !important;}
@@ -143,27 +143,17 @@ table .cta td a {text-decoration: none !important;}
     div > u ~ .resptab {min-width: 100%;}
     }
     /* This center the email on Gmail and Outlook mobile ends */
-  <style type="text/css">
-           
-       /** MP4 CSS **/
-       .video-wrapper {display:none;}
-       @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width:1024px){
-       .video-wrapper { display:block!important;width: 100%; height: auto }
-       .video-fallback { display:none!important; }
-       }
-       @supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
-       div[class^=video-wrapper] { display:block!important; }
-       div[class^=video-fallback] { display:none!important; }
-       }
-       #MessageViewBody .video-wrapper { display:block!important; }
-       #MessageViewBody .video-fallback { display:none!important; }
-       @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width:375px){
-       .video-wrapper { display:block!important; }
-       .video-fallback { display:none!important; }
-       #mob{width: 100%; height: auto !important}
-       }
-       /** MP4 CSS ends **/
+
   </style>
+  <style>
+      .grayscale-image {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      }
+      .grayscale-image:hover {
+      filter: grayscale(0%);
+      }
+</style>
 </head>
 <body style="margin:0 auto;padding-bottom:10px;padding-right:0;padding-left:0;min-width:100%;background-color:#ffffff;line-height: 0px;">
   <center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
@@ -216,10 +206,10 @@ table .cta td a {text-decoration: none !important;}
                 </th>
                 <th align="center" class="rup" valign="top">
                   <a href="">
-                    <img src="https://assets.merkle.com/is/image/merkle/Merkle-Teaser-Full-Width-Blue-03:Image-Square-M?op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha" alt="" style="display: block; border: 0" border="0" class="hide" width="300" height="300">
+                    <img src="https://assets.merkle.com/is/image/merkle/Merkle-Teaser-Full-Width-Blue-03:Image-Square-M?op_sharpen=1&op_usm=1.0,0.3,1.0,0&fmt=png-alpha" alt="" style="display: block; border: 0" border="0" class="hide grayscale-image" width="300" height="300">
                     <!--[if !mso]><!-->
                       <div class="show" style="font-size: 0%; max-height: 0; width:0px; overflow: hidden; display: none;">
-                        <img src="https://ddaniele85.github.io/merkleemailinnovation/img/hero/spotmob3.png" alt="" style="display: block; border: 0" border="0" class="respimg" width="" height="">
+                        <img src="https://ddaniele85.github.io/merkleemailinnovation/img/hero/spotmob3.png" alt="" style="display: block; border: 0" border="0" class="respimg grayscale-image" width="100%" height="100%">
                       </div>
                     <!--<![endif]-->
                   </a>
@@ -236,18 +226,14 @@ table .cta td a {text-decoration: none !important;}
         <td align="center" class="padlr20 padbot40" style="padding-top:30px; padding-bottom:30px;">
           <table cellpadding="0" cellspacing="0" border="0" width="520" class="resptab" role="presentation" style="width:520px;">
             <tr align="center">
-              <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 21px; color:#33302E; mso-line-height-rule: exactly; text-align: left; padding-bottom: 15px;">
-                Lorem ipsum dolor sit
-              </td>
-            </tr>
-            <tr align="center">
-              <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 24px; line-height: 28px; color:#000000; mso-line-height-rule: exactly; text-align: left; padding-bottom: 15px;">
-                <strong>Lorem Ipsum</strong><br>Sit Amet, Consectetur Adipiscing Elit
+              <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 24px; line-height: 28px; color:#000000; mso-line-height-rule: exactly; text-align: left; padding-bottom: 15px; font-weight: bold;">
+                This are CSS animations
               </td>
             </tr>
             <tr align="center">
               <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 21px; color:#33302E; mso-line-height-rule: exactly; text-align: left;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+                Aggiorna il tuo browser se hai mancato l'animazione,
+                E' possible aggiungere altre animazioni CSS per enfatizzare le tue emails
               </td>
             </tr>           
             <tr align="center">
@@ -255,7 +241,7 @@ table .cta td a {text-decoration: none !important;}
                 <table cellpadding="0" cellspacing="0" border="0" class="cta resptab cta-button" role="presentation" style="border-radius:25px; border:2px solid #001E50, cur" bgcolor="#001E50">
                   <tr align="center">
                     <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 12px; color:#ffffff; mso-line-height-rule: exactly; text-decoration: none; font-weight:bold; padding-left: 30px; padding-right: 30px;  padding-top:15px; padding-bottom:14px;">
-                      <a href="##" target="_blank" class="ahover" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 12px; color:#ffffff; mso-line-height-rule: exactly; text-decoration: none; font-weight:bold;">CTA text</a>
+                      <a href="##" target="_blank" class="ahover" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 12px; color:#ffffff; mso-line-height-rule: exactly; text-decoration: none; font-weight:bold;">Hover Me!</a>
                     </td>
                   </tr>
                 </table>
@@ -298,9 +284,8 @@ table .cta td a {text-decoration: none !important;}
                     </td>
                   </tr>
                   <tr align="center">
-                    <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; color:#ffffff; mso-line-height-rule: exactly; text-align: left; padding-top:16px;">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br><br>
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <td align="center" style="font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; color:#ffffff; mso-line-height-rule: exactly; text-align: center; padding-top:16px;">
+                      &copy; Merkle Email Innovation Library
                     </td>
                   </tr>
                 </table>
